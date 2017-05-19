@@ -1,0 +1,364 @@
+/* 
+
+Dashboard Template 
+http://www.templatemo.com/preview/templatemo_415_dashboard
+
+    1. CSS Imports
+    2. General Styles
+    3. Sidebar
+    4. Charts
+    5. Preferences form
+    6. Sign in form
+    7. tables.html
+    8. Bootstrap overrides
+    9. Maps
+    10. Media Queries
+	
+--------------------------------------- */
+
+/* 1. CSS Imports
+--------------------------------------- */
+@import url('http://fonts.googleapis.com/css?family=Open Sans:300,400,700');
+@import url(font-awesome.min.css);
+@import url(bootstrap.min.css);
+
+/* 2. General Styles
+--------------------------------------- */
+* { font-family: 'Open Sans', sans-serif; }
+body { background-color: rgb(235,235,235); }
+h1 { font-size: 24px; }
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+.logo { display: inline-block; }
+.logo h1 {
+    font-size: 24px;
+    margin: 10px 15px;
+}
+.templatemo-content-wrapper {
+    float: left;
+    width: 100%;
+}
+.templatemo-content {
+    margin-left: 235px;
+    margin-top: 0px;
+    min-height: 600px;
+    padding: 25px 20px 0 20px;
+    background-color: white;
+    overflow-x: hidden;
+}
+.templatemo-footer {
+    clear: both;
+    font-size: 13px;
+    padding: 8px 0 5px 0;
+    text-align: center;
+    color: #ccc;
+    background-color: #333;
+}
+.margin-bottom-15 { margin-bottom: 15px; }
+.margin-bottom-30 { margin-bottom: 30px; }
+
+/* 3. Sidebar
+------------------------------------------------------*/
+#templatemo_search_box {
+    width: 150px;
+    display: inline-block;
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-header { color: rgb(127,127,127); }
+.templatemo-sidebar {
+    padding: 0;
+    margin-top: 20px;
+}
+.templatemo-sidebar .templatemo-sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.templatemo-sidebar .templatemo-sidebar-menu > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+.templatemo-sidebar .templatemo-sidebar-menu > li > a {
+    display: block;
+    position: relative;
+    margin: 0;
+    border: 0px;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;    
+}
+.templatemo-sidebar-menu a { color: black; }
+.templatemo-sidebar-menu a:hover { text-decoration: none; }
+.templatemo-sidebar-menu li.sub .templatemo-submenu { display: none; }
+.templatemo-sidebar-menu li.sub.open .templatemo-submenu { display: block; }
+.templatemo-submenu { padding-left: 0; }
+.templatemo-submenu li {
+    list-style: none;
+    background-color: #DFDFDF;
+}
+.templatemo-submenu li a {
+    display: block;
+    padding: 20px 15px;
+    margin: 0;
+}
+.templatemo-sidebar-menu > li.sub.open > a {
+    background-color: rgba(145,145,145,0.3);
+}
+.templatemo-sidebar .templatemo-sidebar-menu >li.active, .templatemo-sidebar .templatemo-sidebar-menu>li>a:hover {
+    background-color: rgb(191, 232, 167);
+}
+.templatemo-submenu li > a:hover {
+    background-color: rgb(228,228,228);
+}
+.templatemo-sidebar .templatemo-sidebar-menu > li > a > i {
+    font-size: 16px;
+    top: 2px;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+}
+
+/* 4. Charts 
+--------------------------------------------*/
+.templatemo-chart-box {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 30px 30px 0;
+}
+
+/* 5. Preferences Form
+------------------------------------------*/
+#templatemo-preferences-form {
+    max-width: 960px;
+    margin-bottom: 30px;
+}
+
+/* 6. Sign in Form 
+--------------------------------------------*/
+.templatemo-signin-form {
+    padding-top: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* 7. tables.html
+------------------------------------------*/
+#templatemo_sort_btn { margin-bottom: 20px; }
+
+/* 8. Bootstrap overrides
+----------------------------------------------*/
+.nav-pills>li>a, .nav-tabs>li>a, .alert, .progress, .panel, .btn, .panel-group .panel, .form-control, .modal-content, .breadcrumb {
+    border-radius: 0;
+}
+.list-group-item:first-child, .panel-heading {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-control-feedback { right: 15px; }
+
+/* 9. Maps
+------------------------------------------------------*/
+.jqvmap-zoomin, .jqvmap-zoomout {
+    width: 15px;
+    height: 15px;
+}
+.vmap { height: 400px; }
+
+/* 10. Media Queries
+------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+    .templatemo-sidebar {
+        width: 235px;
+        float: left;
+        position: relative;
+        margin-right: -100%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .navbar-form {
+        padding: 0;
+        margin-left: 0;
+    }
+    .navbar-header { float: none; }
+    .navbar-toggle { display: block; }
+    .templatemo-sidebar {
+        border-top: 0 !important;
+        margin: 20px;
+    }
+    .templatemo-sidebar.navbar-collapse.collapse {
+        display: none !important;
+    }
+    .templatemo-sidebar.navbar-collapse.in {
+        border-top: 0 !important;
+        margin: 20px;
+        position: relative;
+        overflow: hidden !important;
+        overflow-y: auto !important;
+        display: block !important;
+    }
+    .templatemo-content-wrapper { float: none; }
+    .templatemo-content { margin: 0; }
+}
+@media screen and (max-width: 767px) {
+    .templatemo-chart-box {
+        padding-right: 0;
+    }
+}
+
+/* 11. Login Register
+------------------------------------------------------*/
+#regContainer{
+    margin-top: 3%;  
+}
+
+.panel-login {
+    border-color: #ccc;
+     background-color: #f9f8f8;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+    text-align:center;
+}
+.panel-login>.panel-heading a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+    font-size: 34px;
+}
+.panel-login>.panel-heading hr{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    clear: both;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+    height: 45px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+    outline:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #ccc;
+}
+.btn-login {
+    background-color:#3D9DB3;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #2d92a9;
+}
+.btn-login:hover,
+.btn-login:focus {
+    color: #fff;
+    background-color: #198da8;
+    border-color: #53A3CD;
+}
+.btn-register {
+    background-color: #17ae47;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+    color: #fff;
+    background-color: #1CA347;
+    border-color: #1CA347;
+}
+
+.fullscreen_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('https://jointgroup.es/wp-content/uploads/2016/11/joint-network-group.jpg');
+    background-repeat:repeat;
+  }
+
+.panel-heading a{
+    font-size: 48px;
+    color: rgb(6, 106, 117);
+    padding: 2px 0 10px 0;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.panel-heading a{
+    background: -webkit-repeating-linear-gradient(-45deg, 
+    rgb(18, 83, 93) , 
+    rgb(18, 83, 93) 20px, 
+    rgb(64, 111, 118) 20px, 
+    rgb(64, 111, 118) 40px, 
+    rgb(18, 83, 93) 40px);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* 11. Email
+------------------------------------------------------*/
+body{ margin-top:50px;}
+.mail_list .nav-tabs .glyphicon:not(.no-margin) { margin-right:10px; }
+.mail_list .tab-pane .list-group-item:first-child {border-top-right-radius: 0px;border-top-left-radius: 0px;}
+.mail_list .tab-pane .list-group-item:last-child {border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;}
+.mail_list .tab-pane .list-group .checkbox { margin: 0px; }
+.mail_list .tab-pane .list-group input[type="checkbox"]{ position: inherit; }
+.mail_list .tab-pane .list-group .glyphicon { margin-right:5px; }
+.mail_list .tab-pane .list-group .glyphicon:hover { color:#FFBC00; }
+.mail_list a.list-group-item.read { color: #222;background-color: #F3F3F3; }
+.mail_list input[type="checkbox"]{ margin-top: 2px; position: inherit;}
+.mail_list hr { margin-top: 5px;margin-bottom: 10px; }
+.mail_list .nav-pills>li>a {padding: 5px 10px;}
+.mail_list .message { display: block; }
+.mail_list .text { font-size: 11px; }
