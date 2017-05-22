@@ -14,44 +14,15 @@ class Admin extends CI_Controller {
 	public function index()
 	{
 		$data['err_message'] = "";
-		$this->load->view('admin/adminBody', $data);
+		$this->load->view('login/logBod', $data);
 
 	}
 
-	public function keTable()
+	public function dasbor()
 	{
-		$this->load->view('dasbor/tableBody');
-	
+		$this->load->view('dasbor/dasbor');
 	}
 
-	public function kePrefer()
-	{
-		$this->load->view('dasbor/preferenceBody');
-	
-	}
-
-	public function keEmail()
-	{
-		$this->load->view('dasbor/emailBody');
-	
-	}
-
-	public function admin() {
-		$this->load->view('dasbor/utamaBody');
-	
-	}
-
-	public function keTambah()
-	{
-		$this->load->view('dasbor/tambahUser');
-	
-	}
-
-	public function keBerita()
-	{
-		$this->load->view('dasbor/tambahBerita');
-	
-	}
 
 	
 // /*=================================================================

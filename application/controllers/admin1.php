@@ -11,6 +11,6 @@ class Admin1 extends CI_Controller{
     }
  
     function index(){
-        $this->load->view('dasbor/utamaBody');
+        $this->load->view('dasbor/dasbor'); //
     }
 }
