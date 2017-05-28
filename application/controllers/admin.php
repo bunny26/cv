@@ -343,7 +343,7 @@ class Admin extends CI_Controller {
 
 	public function edit_dataU($id_user){
 		$id_user = $this->MyMod->getUser("where id_user = $id_user");
-		$dat a = array(
+		$data = array(
 			"id_user" => $User[0]['id_user'],
 			"nama" => $User[0]['nama'],
 			"user" => $User[0]['user'], );

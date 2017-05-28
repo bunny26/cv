@@ -19,15 +19,41 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 	#Pricing
 	#Blog
 	#Contact
+	#icon
 */
 
+
+
+/*=================================================================
+	Icon
+==================================================================*/
+.icon-box i{
+	color:#333a56;
+}
+
+.nicescroll-cursors
+{
+	position: relative;
+	top: 36px;float: right;
+	width: 8px;
+	height: 150px;
+	background-color: #373737 !important;
+	border: 0px;
+	background-clip: padding-box;
+	border-radius: 0px;
+}
+
+.counters-item
+{
+	border:1px solid #E8E8E8 !important
+}
 
 /*=================================================================
 	Basic Setup
 ==================================================================*/
 
 body {
-    background-color: #233237;
+    background-color: #52658f;
 	font-family: 'Ubuntu', 'Arial', sans-serif;
     line-height: 1.5;
     
@@ -68,7 +94,7 @@ a:focus, a:hover {
 h1, h2, h3, h4, h5, h6 {
     font-family: oswald;
     font-weight: 400;
-    color: #ddd
+    color: #E8E8E8
 }
 
 .kill-margin-bottom {
@@ -168,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .border {
-    border-top: 1px solid #fff;
+    border-top: 1px solid #333A56;
     height: 1px;
     margin: 15px auto 0;
     position: relative;
@@ -176,8 +202,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .border:before {
-    background-color: #fff;
-    border: 1px ridge #fff;
+    background-color: #333A56;
+    border: 1px ridge #333A56;
     content: "";
     height: 10px;
     left: 50%;
@@ -195,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 38px;
-    color: #fff;
+    color: #333A56;
 }
 
 .color {
@@ -289,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-  border-bottom: 1px solid #76323f;
+  border-bottom: 1px solid #333A56;
   margin-bottom: 0;
 }
 
@@ -315,12 +341,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-nav > li.current > a {
-    color: #F7F5E6;
-    background-color: #18121E;
+    color: #373737;
+    background-color: #E8E8E8;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #EAC67A;
+    color: #F7F5E6;
 }
 
 
@@ -330,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #about {
     padding: 70px 0;
-    background-color: #EAC67A;
+    background-color: #E8E8E8;
 }
 
 .about-color {
@@ -341,7 +367,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-text {
 
-	color: #5B0400;
+	color: #52658F;
 	text-align: justify;
 }
 
@@ -400,14 +426,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon-box:before {
 	top: -56.5685px;
-	border-top: solid 4.2426px #5B0400;
-	border-right: solid 4.2426px #5B0400;
+	border-top: solid 4.2426px #52658F;
+	border-right: solid 4.2426px #52658F;
 }
 
 .icon-box:after {
 	bottom: -56.5685px;
-	border-bottom: solid 4.2426px #5B0400;
-	border-left: solid 4.2426px #5B0400;
+	border-bottom: solid 4.2426px #52658F;
+	border-left: solid 4.2426px #52658f;
 }
 
 
@@ -473,7 +499,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #layanan {
     padding: 70px 0 100px;
-    background-color: #eac67a;
+    background-color: #F4F4F4;
 }
 
 .color-text{
@@ -481,19 +507,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #layanan .title {
-    padding-bottom: 125px;
+    padding-bottom: 100px;
 }
 
 .layanan-block {
     padding: 50px 20px;
-    background-color: #984B43;
+    background-color: #333A56;
     border-left: 1px transparent;
     border-top: 1px transparent;
     margin-bottom: 40px;
 	
-	/*-webkit-box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
-	   -moz-box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
-			box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);*/
+	-webkit-box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7) !important;
+	   -moz-box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7) !important;
+			box-shadow:2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7) !important;
+
+		-webkit-box-sizing: border-box !important;
+		-moz-box-sizing: border-box !important;
+		min-height: 250px;
 }
 
 .layanan-icon {
@@ -538,7 +568,7 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background: #63B670;
+	background: #E8E8E8;
 	content: '';
 	
 	-webkit-transition: top 0.3s;
@@ -553,7 +583,7 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	width: 2px;
 	height: 2px;
-	background: #63B670;
+	background: #E8E8E8;
 	content: '';
 	
 	-webkit-transition: height 0.3s;

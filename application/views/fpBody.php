@@ -200,14 +200,14 @@ $this->load->view('fpHead');
 
 							<!-- features media -->
 							<div class="col-md-6 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
-								<iframe src="http://player.vimeo.com/video/108018156" allowfullscreen></iframe>
+								<iframe src="https://www.youtube.com/watch?v=xuMFlMMz--4" allowfullscreen></iframe>
 							</div>
 							<!-- /features media -->
 
 
 							<!-- features content -->
 							<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-								<h3>CV Sandi Utama</h3>
+								<h2>CV <span class="color">SANDI UTAMA</span></h2>
 								<p>Adalah perusahaan keluarga yang bergerak dibidang suplier maritim yang mensuplai perusahaan BUMN, PT Pal Indonesia, namun pada tahun berikutnya bergerak cepat mengembangkan sayap dengan merambah bisnis properti yang melayani desain Arsitektur dan Interior serta pembangunan pabrik , rumah tinggal, bahkan kami mengerjakan Instalasi Mechanical Electric dan dipercayai sebagai salah satu anak perusahaan Grup Bakrie yaitu PT Aneka Banusakti untuk mengerjakan pabrik serta instalasi mesinnya </p>
 								<p>Kami berharap dapat menjadi bagian pembangunan Republik ini dengan mengutamakan sumber daya anak muda yang berprestasi dan mempunyai komitmen tinggi</p>
 								
@@ -324,7 +324,7 @@ $this->load->view('fpHead');
 					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
 						<div class="layanan-block text-center color-text">
 							<h3>Desain Interior</h3>
-							<p>Dipercaya untuk merakit instalasi listrik pada rumah dan mempercantik tampilan hunian anda menjadi elegan</p>
+							<p>Dipercaya untuk merakit instalasi listrik pada rumah dan mempercantik tampilan hunian anda menjadi lebih elegan</p>
 						</div>
 					</article>
 					<!-- End Single Service Item -->
@@ -351,7 +351,7 @@ $this->load->view('fpHead');
 						<!-- portfolio item filtering -->
 						<div class="portfolio-filter clearfix">
 							<ul class="text-center">
-								<li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
+								<li><a href="javascript:void(0) google.com" class="filter" data-filter="all">All</a></li>
 								<li><a href="javascript:void(0)" class="filter" data-filter=".app">Konstruksi</a></li>
 								<li><a href="javascript:void(0)" class="filter" data-filter=".web">Desain Interior</a></li>
 								<li><a href="javascript:void(0)" class="filter" data-filter=".poo">Arsitektur</a></li>
@@ -371,7 +371,7 @@ $this->load->view('fpHead');
 					<?php foreach($porto as $d){ ?>
 					<?php if ($d['kategori'] === "kontruksi"){ ?>
 					<li class="mix app">
-						<a href="javascript:void(0)" data-largesrc="<?php echo $d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
+						<a href="<?php echo site_url('kePost') ?>" data-largesrc="<?php echo $d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
 							<!-- src="<?php echo $data[3]['imageB'] ?>" alt="<?php echo $data[3]['judul']; ?>" 
 							<img src="<?php echo base_url(); ?>/asset/img/portfolio/1.jpg" alt="Meghna">
 							-->
