@@ -24,7 +24,7 @@ $this->load->view('dasbor/admin/head');
                     More <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Mark all as read</a></li>
+                    <li><a href="<?php echo site_url('admin/crudMail'); ?>">See Mail</a></li>
                     <li class="divider"></li>
                     <li class="text-center"><small class="text-muted">Select messages to see more actions</small></li>
                 </ul>
@@ -67,9 +67,9 @@ $this->load->view('dasbor/admin/head');
                                 </label>
                             </div>
                             <span class="glyphicon glyphicon-star-empty"></span><span class="name" style="min-width: 120px;
-                                display: inline-block;">Bhaumik Patel</span> <span class="">This is big title</span>
-                            <span class="text-muted" style="font-size: 11px;">- Hi hello how r u ?</span> <span
-                                class="badge">12:10 AM</span> <span class="pull-right"><span class="glyphicon glyphicon-paperclip">
+                                display: inline-block;"><?php echo $email[0]['namaPengirim']; ?></span> <span class=""><?php echo $email[0]['email']; ?></span>
+                            <span class="text-muted" style="font-size: 11px;">-<?php echo $email[0]['isiPesan']; ?></span> <span
+                                class="badge"><?php echo $email[0]['waktu'] ?></span> <span class="pull-right"><span class="glyphicon glyphicon-paperclip">
                                 </span></span></a><a href="#" class="list-group-item">
                                     <div class="checkbox">
                                         <label>
@@ -107,6 +107,9 @@ $this->load->view('dasbor/admin/head');
             </div>
             <!-- Ad -->
             <div class="row-md-12">
+                <td>
+                    <a href="<?php echo site_url('admin/add_dataMail'); ?>">Coba Tambah</a>
+                </td>
                 </div>
             </div>
         </div>

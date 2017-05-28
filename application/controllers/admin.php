@@ -15,8 +15,8 @@ class Admin extends CI_Controller {
 	{
 		$data['Berita'] = $this->MyMod->GetBerita();
 		$data['Porto'] = $this->MyMod->getPorto();
-		$data[''] = $this->MyMod->getTest();
-
+		$data['Testimoni'] = $this->MyMod->getTest();
+		
 		$data['err_message'] = "";
 		$this->load->view('login/login', $data);
 
@@ -25,10 +25,11 @@ class Admin extends CI_Controller {
 	public function rumah()
 	{
 		
-		$data['Berita'] = $this->MyMod->GetBerita();
-		$data['Porto'] = $this->MyMod->getPorto();
-		$data['Testimoni'] = $this->MyMod->getTest();
-		$data['User'] = $this->MyMod->getUser();
+		$data['berita'] = $this->MyMod->GetBerita();
+		$data['porto'] = $this->MyMod->getPorto();
+		$data['testimoni'] = $this->MyMod->getTest();
+		$data['user'] = $this->MyMod->getUser();
+		$data['email'] = $this->MyMod->getMail();
 		$this->load->view('dasbor/admin/dasbor', $data);
 	}
 
@@ -39,13 +40,67 @@ class Admin extends CI_Controller {
 
 	public function lihatEmail()
 	{
-		$this->load->view('dasbor/admin/email');
+		$data['Email'] = $this->MyMod->getMail();
+		$this->load->view('dasbor/admin/email', $data);
 	}
 
 	public function editProfil()
 	{
 		$this->load->view('dasbor/admin/user');
 	}
+
+
+
+
+	 /*=================================================================
+	kontroler crud email
+	==================================================================*/
+	public function crudMail(){
+
+		$data = $this->MyMod->getMail();
+		$this->load->view('dasbor/admin/email', $data);
+	}
+
+	public function do_deleteMail($email){
+		$wheree = array('email' => $email);
+		$res = $this->MyMod->delete('email',$wheree);
+		if($res>=1){
+			redirect('admin/crudMail');
+		}
+	}
+
+	 public function add_dataMail(){
+        $this->load->view('dasbor/email/emailAdd');
+
+    }
+
+	public function do_insertMail(){
+		 $date = date_create();
+		if (isset($_POST['btnSubmit'])){
+
+			$email = $_POST['email'];
+			$namaPengirim = $_POST['namaPengirim'];
+			$isiEmail =  $_POST['isiEmail'];
+			$waktu =  $_POST['waktu'];
+			$data_insert = array(
+				'email' => $email,
+				'namaPengirim' => $namaPengirim,
+				'isiEmail' => $isiEmail,
+				'waktu' => $waktu
+			);
+
+			// if(is_uploaded_file($_FILES['imageP']['tmp_name'])){
+			// 	move_uploaded_file($_FILES['imageP']['tmp_name'], $target);
+			// 	echo "berhasil";
+
+			// } else {
+			// 	echo "salah";
+			// }
+			$res = $this->db->insert('email', $data_insert) or trigger_error(mysql_error().$sql);
+		}
+		redirect('admin/crudMail');
+	}
+
 
 
 	 /*=================================================================

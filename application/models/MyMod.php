@@ -77,12 +77,21 @@ class MyMod extends CI_Model {
 
 
 /*=================================================================
-    model crud testimoni
+    model crud Poto
 ==================================================================*/
     public function getPorto($where=""){
         $data = $this->db->query('SELECT * FROM portofolio '.$where);
         return $data->result_array();
     }
+
+    /*=================================================================
+    model crud Poto
+==================================================================*/
+    public function getMail($where=""){
+        $data = $this->db->query('SELECT * FROM email '.$where);
+        return $data->result_array();
+    }
+
 
 
     /*=================================================================
