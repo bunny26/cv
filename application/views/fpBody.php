@@ -452,7 +452,7 @@ $this->load->view('fpHead');
 							<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
 						</div>
 					</div>
-					<!-- end skill set --> -->
+					<!-- end skill set --> 
 
 					<!-- skill set -->
 					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
@@ -504,7 +504,7 @@ $this->load->view('fpHead');
 							<article class="team-mate">
 								<div class="member-photo">
 									<!-- member photo -->
-									<img class="img-responsive" src="<?php echo base_url(); ?>/asset/img/team/member-1.jpg" alt="Meghna">
+									<img class="img-responsive" src="<?php echo base_url(); ?>images/berita/15.jpg" alt="Meghna">
 									<!-- /member photo -->
 
 									<!-- member social profile -->
@@ -541,7 +541,7 @@ $this->load->view('fpHead');
 							<article class="team-mate">
 								<div class="member-photo">
 									<!-- member photo -->
-									<img class="img-responsive" src="<?php echo base_url(); ?>/asset/img/team/9.jpg" alt="Meghna">
+									<img class="img-responsive" src="<?php echo base_url(); ?>images/berita/16.jpg" alt="Meghna">
 									<!-- /member photo -->
 
 									<!-- member social profile -->
@@ -577,7 +577,7 @@ $this->load->view('fpHead');
 							<article class="team-mate">
 								<div class="member-photo">
 									<!-- member photo -->
-									<img class="img-responsive" src="<?php echo base_url(); ?>/asset/img/team/member-1.jpg" alt="Meghna">
+									<img class="img-responsive" src="<?php echo base_url(); ?>images/berita/17.jpg" alt="Meghna">
 									<!-- /member photo -->
 
 									<!-- member social profile -->
@@ -613,7 +613,7 @@ $this->load->view('fpHead');
 							<article class="team-mate kill-margin-bottom">
 								<div class="member-photo">
 									<!-- member photo -->
-									<img class="img-responsive" src="<?php echo base_url(); ?>/asset/img/team/member-1.jpg" alt="Meghna">
+									<img class="img-responsive" src="<?php echo base_url(); ?>images/berita/15.jpg" alt="Meghna">
 									<!-- /member photo -->
 
 									<!-- member social profile -->
@@ -710,7 +710,7 @@ $this->load->view('fpHead');
 								<!-- /client photo -->
 
 								<!-- client info -->
-								<div class="client-info">
+								<!-- <div class="client-info">
 									<div class="client-meta">
 										<h3><?php echo $test[$random2]['namaTest']; ?></h3>
 										<span><?php echo $test[$random2]['tanggal']; ?></span>
@@ -718,32 +718,32 @@ $this->load->view('fpHead');
 									<div class="client-comment">
 										<p><?php echo $test[$random2]['testimoni']; ?></p>
 									</div>
-								</div>
+								</div> -->
 								<!-- /client info -->
-							</div>
+							<!-- </div> -->
 							<!-- /testimonial single -->
 
 							<!-- testimonial single -->
-							<div class="item text-center">
+							<!-- <div class="item text-center"> -->
 
 								<!-- client photo -->
-								<div class="client-thumb">
+								<!-- <div class="client-thumb">
 									<img src="<?php echo $test[2]['imageT'] ?>" alt="<?php echo $test[2]['namaTest']; ?>" class="img-responsive" alt="Meghna">
-								</div>
+								</div> -->
 								<!-- /client photo -->
 
 								<!-- client info -->
-								<div class="client-info">
+								<!-- <div class="client-info">
 									<div class="client-meta">
 										<h3><?php echo $test[2]['namaTest']; ?></h3>
 										<span><?php echo $test[2]['tanggal']; ?></span>
 									</div>
 									<div class="client-comment">
 										<p><?php echo $test[2]['testimoni']; ?></p>
-									</div>
+									</div> -->
 								</div>
 								<!-- /client info -->
-							</div>
+							<!-- </div> -->
 							<!-- /testimonial single -->
 
 						</div>		<!-- end testimonial wrapper -->
@@ -798,19 +798,19 @@ $this->load->view('fpHead');
 						<div class="note">
 							<div id="gallery-post" class="media-wrapper">
 								<div class="item">
-									<img src="<?php echo $berita[1]['imageB'] ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
+									<img src="<?php echo substr($berita[1]['imageB'],0,300); ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
 								</div>
 								<div class="item">
-									<img src="<?php echo $berita[1]['imageB'] ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
+									<img src="<?php echo substr($berita[1]['imageB'],0,300); ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
 								</div>
 								<div class="item">
-									<img src="<?php echo $berita[1]['imageB'] ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
+									<img src="<?php echo substr($berita[1]['imageB'],0,300); ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
 								</div>
 							</div>
 							
 							<div class="excerpt">
-								<h3><?php echo $berita[1]['judul']; ?></h3>
-								<p><?php echo $berita[1]['isiBerita']; ?></p>
+								<h3><?php echo substr($berita[1]['judul'],0,300); ?></h3>
+								<p><?php echo substr($berita[1]['isiBerita'],0,300); ?></p>
 							</div>
 							<div class="coly">
 								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
@@ -827,8 +827,8 @@ $this->load->view('fpHead');
 							</div>
 							
 							<div class="excerpt">
-								<h3><?php echo $berita[2]['judul']; ?></h3>
-								<p><?php echo $berita[2]['isiBerita']; ?></p>
+								<h3><?php echo substr ($berita[2]['judul'],0,300); ?></h3>
+								<p><?php echo substr($berita[2]['isiBerita'],0,300); ?></p>
 							</div>
 							<div class="coly">
 								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
@@ -844,8 +844,8 @@ $this->load->view('fpHead');
 								<img src="<?php echo $berita[2]['imageB'] ?>" alt="<?php echo $berita[2]['judul']; ?>" class="img-responsive">
 							</div>
 							<div class="excerpt">
-								<h3><?php echo $berita[2]['judul']; ?></h3>
-								<p><?php echo $berita[2]['isiBerita']; ?></p>
+								<h3><?php echo substr($berita[2]['judul'],0,300); ?></h3>
+								<p><?php echo substr($berita[2]['isiBerita'],0,300); ?></p>
 							</div>
 							<div class="coly">
 								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>

@@ -1,4 +1,4 @@
-<?php 
+s<?php 
 $this->load->view('dasbor/admin/head');
 ?>
 <div class="templatemo-content-wrapper">

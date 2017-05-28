@@ -25,7 +25,7 @@
 	display: block;
 	position: relative;
     max-width: 100%;
-    min-height: 250px;
+    height: 250px;
 }
 
 .og-grid li.og-expanded > a::after {
@@ -95,7 +95,7 @@
 
 .og-fullimg,
 .og-details {
-	min-width: 60%;
+	width: 50%;
 	float: left;
 	height: 100%;
 	overflow: hidden;

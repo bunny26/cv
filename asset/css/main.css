@@ -59,6 +59,7 @@ body {
     background-color: #52658f;
 	font-family: 'Ubuntu', 'Arial', sans-serif;
     line-height: 1.5;
+    color: #E8E8E8 !important;
     
 }
 
@@ -735,11 +736,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #our-team {
     padding: 70px 0;
-    background-color: #eac67a; 
+    background-color: #F4F4F4; 
 }
 
 .about-team {
-    color: #984B43;
+    color: #333A56;
     padding-bottom: 40px;
 }
 
@@ -748,7 +749,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-mate {
-	background-color: #984B43;
+	background-color: #333A56;
 	/*border: 1px solid #4e595f;*/
 }
 
@@ -774,11 +775,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .member-title {
-	border-bottom: 1px solid #EAC67A;
+	border-bottom: 1px solid #fff;
 	padding: 10px 15px;
 	color: #fff;
-	height: fixed;
-	width: fixed;
+	min-height: 100px !important;
+	width: auto; !important;
 
 }
 
@@ -856,6 +857,14 @@ h1, h2, h3, h4, h5, h6 {
 .mask ul li a:hover {
     background-color: #6cb670;
     border: 1px solid transparent;
+}
+
+.img-responsive 
+{
+	display:block !important;
+	max-width : auto !important;
+	min-height: auto; !important;
+
 }
 
 
@@ -1140,17 +1149,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #contact-us {
     padding: 70px 0 0;
-    background-color: #eac67a;
-    color: #984B43;	
+    background-color: #F4F4F4;
+    color: #333A56;	
 }
-.judul h3 h1{
 
 
-}
 
 .contact-details{
 
-	color:#984B43;
+	color:#333A56;
 }
 
 .contact-form {
@@ -1159,18 +1166,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-form .form-control {
 	background-color: transparent;
-	border: 1px solid #984B43;
+	border: 1px solid #333A56;
 	height: 38px;
 }
 
 .contact-form input:hover, 
 .contact-form textarea:hover,
 #contact-submit:hover {
-    border-color: #18121E;
+    border-color: #4484ce;
 }
 
 #contact-submit {
-	border: 1px solid #984B43;
+	border: 1px solid #333A56;
 	padding: 12px 0;
 	width: 100%;
 	margin: 0;
@@ -1258,7 +1265,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-icon > ul > li > a > i {
-    color: #984B43;
+    color: #F7F5E6;
     display: inline-block;
     font-size: 32px;
     line-height: 70px;
@@ -1280,7 +1287,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-icon > ul > li:hover a {
-    background-color: #eac67a;
+    background-color: #E8E8E8;
 	
 	-webkit-transform: rotateY(0deg);
 	   -moz-transform: rotateY(0deg);
@@ -1311,7 +1318,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #scrollUp {
-    border: 1px solid #EAC67A;
+    border: 1px solid #88bbd6;
     bottom: 15px;
     color: #fff;
     display: none;
@@ -1322,8 +1329,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #scrollUp:hover {
-    background-color: #EAC67A;
-    border: 1px solid #EAC67A;
+    background-color: #cdcdcd;
+    border: 1px solid #cdcdcd;
 }
 
 
@@ -1331,6 +1338,12 @@ h1, h2, h3, h4, h5, h6 {
 	Blog Page - Blog
 ==================================================================*/
 
+#blog
+{
+	padding-bottom: 110px !important;
+	padding-top: :70px !important;
+	background-color: #52658F !important;
+}
 
 #blog-banner {
 	padding-bottom: 100px;
@@ -1711,7 +1724,7 @@ blockquote {
 }
 
 .coment1{
-	color: #fff;
+	color: #333A56;
 }
 
 .comment-list ul li {
