@@ -30,7 +30,10 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 .icon-box i{
 	color:#333a56;
 }
-
+/*.fa-caret-square-o-up,
+{
+	color:#333a56;
+}*/
 .nicescroll-cursors
 {
 	position: relative;
@@ -70,7 +73,7 @@ figure {
 }
 
 a {
-    color: #ddd;
+    color: #E8E8E8;
 	
 	-webkit-transition: all .3s ease-in 0s;
 	   -moz-transition: all .3s ease-in 0s;
@@ -688,7 +691,7 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(../img/parallax/skills.jpg);
 }
 
-.skill-chart > h3 {
+.skill-chart  h3,p {
     border-bottom: 1px solid;
     margin: 25px 0 15px;
     padding-bottom: 10px;
@@ -707,6 +710,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     width: 150px;
     z-index: 2;
+    color: #E8E8E8;
 }
 
 .chart canvas {
@@ -714,6 +718,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -75px;
     position: absolute;
     top: 0;
+    color: #F7F5E6 !important;
 }
 
 .percent:after {

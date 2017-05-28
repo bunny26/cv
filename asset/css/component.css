@@ -95,7 +95,7 @@
 
 .og-fullimg,
 .og-details {
-	width: 50%;
+	min-width: 60%;
 	float: left;
 	height: 100%;
 	overflow: hidden;

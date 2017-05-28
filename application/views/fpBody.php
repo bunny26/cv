@@ -443,7 +443,7 @@ $this->load->view('fpHead');
 					<!-- /section title -->
 
 					<!-- skill set -->
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+					<!-- <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
 						<div class="skill-chart text-center">
 							<span class="chart" data-percent="80">
 								<span class="percent"></span>
@@ -452,43 +452,33 @@ $this->load->view('fpHead');
 							<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
 						</div>
 					</div>
-					<!-- end skill set -->
+					<!-- end skill set --> -->
 
 					<!-- skill set -->
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
 						<div class="skill-chart text-center">
 							<span class="chart" data-percent="90">
 								<span class="percent">86</span>
 							</span>
-							<h3><i class="fa fa-html5"></i> HTML 5</h3>
-							<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
+							<h3><i class="fa fa-caret-square-o-up"></i> Interior</h3>
+							<p class="skill-chart" style="color: #e8e8e8">his family being attacked by British-born Caucasian skinheads, leading to a death in the family. While the identified attackers were never charged by racially biased police, he himself was arrested for defending his family. </p>
 						</div>
 					</div>
 					<!-- end skill set -->
 
 					<!-- skill set -->
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
 						<div class="skill-chart text-center">
 							<span class="chart" data-percent="85">
 								<span class="percent"></span>
 							</span>
-							<h3><i class="fa fa-android"></i> Android</h3>
-							<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
+							<h3><i class="fa fa-gavel"></i> Arsitektur</h3>
+							<p class="skill-chart" style="color: #e8e8e8">He swore to change the manner in which East Indians were profiled and set about to build a Mini-India in Southall. </p>
 						</div>
 					</div>
 					<!-- end skill set -->
 
-					<!-- skill set -->
-					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="skill-chart text-center">
-							<span class="chart" data-percent="70">
-								<span class="percent"></span>
-							</span>
-							<h3><i class="fa fa-apple"></i> IOS</h3>
-							<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
-						</div>
-					</div>
-					<!-- end skill set -->
+					
 
 				</div>  		<!-- End row -->
 			</div>   	<!-- End container -->
@@ -851,11 +841,11 @@ $this->load->view('fpHead');
 					<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
 						<div class="note kill-margin-bottom">
 							<div class="media-wrapper">
-								<img src="<?php echo $berita[3]['imageB'] ?>" alt="<?php echo $beritas[3]['judul']; ?>" class="img-responsive">
+								<img src="<?php echo $berita[2]['imageB'] ?>" alt="<?php echo $berita[2]['judul']; ?>" class="img-responsive">
 							</div>
 							<div class="excerpt">
-								<h3><?php echo $berita[3]['judul']; ?></h3>
-								<p><?php echo $berita[3]['isiBerita']; ?></p>
+								<h3><?php echo $berita[2]['judul']; ?></h3>
+								<p><?php echo $berita[2]['isiBerita']; ?></p>
 							</div>
 							<div class="coly">
 								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
