@@ -2,8 +2,7 @@
 $this->load->view('fpHead');
 ?>
 <body id="body">
-
-
+      
         <!--
         Welcome Slider
         ==================================== -->
@@ -107,7 +106,7 @@ $this->load->view('fpHead');
         			<a class="navbar-brand" href="#body">
         				<!-- buka w3school buat cocokin gambar -->
         				<div id="logo">
-        					 <img src="<?php echo base_url(); ?>/asset/img/logos/logo.png" style="width: 20%; height:20%; " alt="Meghna" /> 
+        					<img src="<?php echo base_url(); ?>/asset/img/logos/cv.jpg" style="width: 20%; height:20%; " alt="Meghna" /> 
 
         				</div>
         			</a>
@@ -290,279 +289,218 @@ $this->load->view('fpHead');
 		
 		
 		<!-- Start Layanan Section
-			==================================== -->
+		==================================== -->
 
-			<section id="layanan" class="bg-one">
-				<div class="container">
-					<div class="row">
+		<section id="layanan" class="bg-one">
+			<div class="container">
+				<div class="row">
 
-						<!-- section title -->
-						<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-							<h2>Our <span class="color">Services</span></h2>
-							<div class="border"></div>
+					<!-- section title -->
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+						<h2>Our <span class="color">Services</span></h2>
+						<div class="border"></div>
+					</div>
+					<!-- /section title -->
+
+					<!-- Single Service Item -->
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+						<div class="layanan-block text-center color-text">
+							<h3>Konstruksi</h3>
+							<p>Menerima jasa pembangunan konstruksi pabrik baja dan lainnya, dipercaya hapir 3 tahun lamanya untuk mengenmbangkan instruksi dan lainnya</p>
 						</div>
-						<!-- /section title -->
+					</article>
+					<!-- End Single Service Item -->
 
-						<!-- Single Service Item -->
-						<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-							<div class="layanan-block text-center color-text">
-								<h3>Konstruksi</h3>
-								<p>Menerima jasa pembangunan konstruksi pabrik baja dan lainnya, dipercaya hapir 3 tahun lamanya untuk mengenmbangkan instruksi dan lainnya</p>
-							</div>
-						</article>
-						<!-- End Single Service Item -->
+					<!-- Single Service Item -->
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+						<div class="layanan-block text-center color-text">
+							<h3>Arsitektur</h3>
+							<p>Menyediakan rancang bangun pada hunian anda, berpengalaman dengan berbagai karya dan rancangan yang sudah memasuki pasar Asia</p>
+						</div>
+					</article>
+					<!-- End Single Service Item -->
 
-						<!-- Single Service Item -->
-						<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-							<div class="layanan-block text-center color-text">
-								<h3>Arsitektur</h3>
-								<p>Menyediakan rancang bangun pada hunian anda, berpengalaman dengan berbagai karya dan rancangan yang sudah memasuki pasar Asia</p>
-							</div>
-						</article>
-						<!-- End Single Service Item -->
-
-						<!-- Single Service Item -->
-						<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-							<div class="layanan-block text-center color-text">
-								<h3>Desain Interior</h3>
-								<p>Dipercaya untuk merakit instalasi listrik pada rumah dan mempercantik tampilan hunian anda menjadi elegan</p>
-							</div>
-						</article>
-						<!-- End Single Service Item -->
-					</div> 		<!-- End row -->
-				</div>   	<!-- End container -->
-			</section>   <!-- End section -->
+					<!-- Single Service Item -->
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+						<div class="layanan-block text-center color-text">
+							<h3>Desain Interior</h3>
+							<p>Dipercaya untuk merakit instalasi listrik pada rumah dan mempercantik tampilan hunian anda menjadi elegan</p>
+						</div>
+					</article>
+					<!-- End Single Service Item -->
+				</div> 		<!-- End row -->
+			</div>   	<!-- End container -->
+		</section>   <!-- End section -->
 
 
 		<!-- Start Portfolio Section kurang konten -  mencari asal .app / .webz
-			=========================================== -->
+		=========================================== -->
 
-			<section id="showcase">
-				<div class="container">
-					<div class="row wow fadeInDown" data-wow-duration="500ms">
-						<div class="col-lg-12">
-
-							<!-- section title -->
-							<div class="title text-center">
-								<h2>Our <span class="color">Works</span></h2>
-								<div class="border"></div>
-							</div>
-							<!-- /section title -->
-
-							<!-- portfolio item filtering -->
-							<div class="portfolio-filter clearfix">
-								<ul class="text-center">
-									<li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
-									<li><a href="javascript:void(0)" class="filter" data-filter=".app">Konstruksi</a></li>
-									<li><a href="javascript:void(0)" class="filter" data-filter=".web">Desain Interior</a></li>
-									<li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">Arsitektur</a></li>
-								</ul>
-							</div>
-							<!-- /portfolio item filtering -->
-
-						</div> <!-- /end col-lg-12 -->
-					</div> <!-- end row -->
-				</div>	<!-- end container -->
-
-				<!-- portfolio items -->
-				<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
-					<ul id="og-grid" class="og-grid">
-
-						<!-- single portfolio item -->	
-						<li class="mix app">
-							<a href="javascript:void(0)" data-largesrc="<?php echo base_url(); ?>/asset/img/portfolio/1.jpg" data-title="" data-description="">
-								<img src="<?php echo base_url(); ?>/asset/img/portfolio/1.jpg" alt="Meghna">
-								<div class="hover-mask">
-									<h3>Azuki bean</h3>
-									<span>
-										<i class="fa fa-plus fa-2x"></i>
-									</span>
-								</div>
-							</a>
-						</li>
-						<!-- /single portfolio item -->
-
-						<!-- single portfolio item -->
-						<li class="mix web">
-							<a href="javascript:void(0)" data-largesrc="<?php echo base_url(); ?>/asset/img/portfolio/11.jpg" data-title="" data-description="">
-								<img src="<?php echo base_url(); ?>/asset/img/portfolio/11.jpg" alt="Meghna">
-								<div class="hover-mask">
-									<h3>Veggies sunt bona vobis</h3>
-									<span>
-										<i class="fa fa-plus fa-2x"></i>
-									</span>
-								</div>
-							</a>
-						</li>
-						<!-- /single portfolio item -->
-
-						<!-- single portfolio item -->
-						<li class="mix app">
-							<a href="javascript:void(0)" data-largesrc="<?php echo base_url(); ?>/asset/img/portfolio/2.jpg" data-title="" data-description="">
-								<img src="<?php echo base_url(); ?>/asset/img/portfolio/2.jpg" alt="Meghna">
-								<div class="hover-mask">
-									<h3>Dandelion horseradish</h3>
-									<span>
-										<i class="fa fa-plus fa-2x"></i>
-									</span>
-								</div>
-							</a>
-						</li>
-						<!-- /single portfolio item -->
-
-						<!-- single portfolio item -->
-						<li class="mix illustrator">
-							<a href="javascript:void(0)" data-largesrc="<?php echo base_url(); ?>/asset/img/portfolio/13.jpg" data-title="" data-description="">
-								<img src="<?php echo base_url(); ?>/asset/img/portfolio/13.jpg" alt="Meghna">
-								<div class="hover-mask">
-									<h3>Dandelion horseradish</h3>
-									<span>
-										<i class="fa fa-plus fa-2x"></i>
-									</span>
-								</div>
-							</a>
-						</li>
-						<!-- /single portfolio item -->
-
-						<!-- single portfolio item -->
-						<li class="mix web">
-							<a href="javascript:void(0)" data-largesrc="<?php echo base_url(); ?>/asset/img/portfolio/11.jpg" data-title="" data-description="">
-								<img src="<?php echo base_url(); ?>/asset/img/portfolio/11.jpg" alt="Meghna">
-								<div class="hover-mask">
-									<h3>Azuki bean</h3>
-									<span>
-										<i class="fa fa-plus fa-2x"></i>
-									</span>
-								</div>
-							</a>
-						</li>
-						<!-- /single portfolio item -->
-
-						<!-- single portfolio item -->
-						<li class="mix web">
-							<a href="javascript:void(0)" data-largesrc="<?php echo base_url(); ?>/asset/img/portfolio/2.jpg" data-title="" data-description="">
-								<img src="<?php echo base_url(); ?>/asset/img/portfolio/2.jpg" alt="Meghna">
-								<div class="hover-mask">
-									<h3>Veggies sunt bona vobis</h3>
-									<span>
-										<i class="fa fa-plus fa-2x"></i>
-									</span>
-								</div>	
-							</a>
-						</li>
-						<!-- /single portfolio item -->
-
-						<!-- single portfolio item -->
-						<li class="mix app">
-							<a href="javascript:void(0)" data-largesrc="<?php echo base_url(); ?>/asset/img/portfolio/13.jpg" data-title="" data-description="">
-								<img src="<?php echo base_url(); ?>/asset/img/portfolio/13.jpg" alt="Meghna">
-								<div class="hover-mask">
-									<h3>Dandelion horseradish</h3>
-									<span>
-										<i class="fa fa-plus fa-2x"></i>
-									</span>
-								</div>	
-							</a>
-						</li>
-						<!-- /single portfolio item -->
-
-
-
-						<!-- single portfolio item -->
-						<li class="mix web">
-							<a href="javascript:void(0)" data-largesrc="<?php echo base_url(); ?>/asset/img/portfolio/7.jpg" data-title="" data-description="">
-								<img src="<?php echo base_url(); ?>/asset/img/portfolio/7.jpg" alt="Meghna">
-								<div class="hover-mask">
-									<h3>Dandelion horseradish</h3>
-									<span>
-										<i class="fa fa-plus fa-2x"></i>
-									</span>
-								</div>
-							</a>
-						</li>
-						<!-- /single portfolio item -->
-
-
-
-					</ul> <!-- end og grid -->
-				</div>  <!-- portfolio items wrapper -->
-
-			</section>   <!-- End section -->
-
-
-		<!-- Start Team Skills emang perlu?
-			=========================================== -->
-
-			<section id="team-skills" class="parallax-section">
-				<div class="container">
-					<div class="row wow fadeInDown" data-wow-duration="500ms">
+		<section id="showcase">
+			<div class="container">
+				<div class="row wow fadeInDown" data-wow-duration="500ms">
+					<div class="col-lg-12">
 
 						<!-- section title -->
 						<div class="title text-center">
-							<h2>Our <span class="color">Skills</span></h2>
+							<h2>Our <span class="color">Works</span></h2>
 							<div class="border"></div>
 						</div>
 						<!-- /section title -->
 
-						<!-- skill set -->
-						<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-							<div class="skill-chart text-center">
-								<span class="chart" data-percent="80">
-									<span class="percent"></span>
-								</span>
-								<h3><i class="fa fa-wordpress"></i> Wordpress</h3>
-								<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
-							</div>
+						<!-- portfolio item filtering -->
+						<div class="portfolio-filter clearfix">
+							<ul class="text-center">
+								<li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".app">Konstruksi</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".web">Desain Interior</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".poo">Arsitektur</a></li>
+							</ul>
 						</div>
-						<!-- end skill set -->
+						<!-- /portfolio item filtering -->
 
-						<!-- skill set -->
-						<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-							<div class="skill-chart text-center">
-								<span class="chart" data-percent="90">
-									<span class="percent">86</span>
+					</div> <!-- /end col-lg-12 -->
+				</div> <!-- end row -->
+			</div>	<!-- end container -->
+
+			<!-- portfolio items -->
+			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
+				<ul id="og-grid" class="og-grid">
+
+					<!-- single portfolio item konstruksi-->	
+					<?php foreach($porto as $d){ ?>
+					<?php if ($d['kategori'] === "kontruksi"){ ?>
+					<li class="mix app">
+						<a href="javascript:void(0)" data-largesrc="<?php echo $d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
+							<!-- src="<?php echo $data[3]['imageB'] ?>" alt="<?php echo $data[3]['judul']; ?>" 
+							<img src="<?php echo base_url(); ?>/asset/img/portfolio/1.jpg" alt="Meghna">
+							-->
+							<img src="<?php echo $d['imageP'] ?>" alt="<?php echo $d['namaPorto']; ?>">
+							<div class="hover-mask">
+								<h3><?php echo $d['namaPorto'] ?></h3>
+								<span>
+									<i class="fa fa-plus fa-2x"></i>
 								</span>
-								<h3><i class="fa fa-html5"></i> HTML 5</h3>
-								<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
 							</div>
-						</div>
-						<!-- end skill set -->
+						</a>
+					</li>
+					<?php }} ?>
+					<!-- /single portfolio item -->
 
-						<!-- skill set -->
-						<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-							<div class="skill-chart text-center">
-								<span class="chart" data-percent="85">
-									<span class="percent"></span>
+					<!-- single portfolio item desain interioir-->
+					<?php foreach($porto as $d){ ?>
+					<?php if ($d['kategori'] === "desainInte"){ ?>
+					<li class="mix web">
+						<a href="javascript:void(0)" data-largesrc="<?php echo $d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
+							<img src="<?php echo $d['imageP'] ?>" alt="<?php echo $d['namaPorto']; ?>">
+							<div class="hover-mask">
+								<h3><?php echo $d['namaPorto'] ?></h3>
+								<span>
+									<i class="fa fa-plus fa-2x"></i>
 								</span>
-								<h3><i class="fa fa-android"></i> Android</h3>
-								<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
 							</div>
-						</div>
-						<!-- end skill set -->
+						</a>
+					</li>
+					<?php }} ?>
+					<!-- /single portfolio item -->
 
-						<!-- skill set -->
-						<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-							<div class="skill-chart text-center">
-								<span class="chart" data-percent="70">
-									<span class="percent"></span>
+					<!-- single portfolio item -->
+					<?php foreach($porto as $d){ ?>
+					<?php if ($d['kategori'] === "arsitektur"){ ?>
+					<li class="mix poo">
+						<a href="javascript:void(0)" data-largesrc="<?php echo $d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
+							<img src="<?php echo $d['imageP'] ?>" alt="<?php echo $d['namaPorto']; ?>">
+							<div class="hover-mask">
+								<h3><?php echo $d['namaPorto'] ?></h3>
+								<span>
+									<i class="fa fa-plus fa-2x"></i>
 								</span>
-								<h3><i class="fa fa-apple"></i> IOS</h3>
-								<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
-							</div>
-						</div>
-						<!-- end skill set -->
+							</div>	
+						</a>
+					</li>
+					<?php }} ?>
+					<!-- /single portfolio item -->
 
-					</div>  		<!-- End row -->
-				</div>   	<!-- End container -->
-			</section>   <!-- End section -->
+
+				</ul> <!-- end og grid -->
+			</div>  <!-- portfolio items wrapper -->
+
+		</section>   <!-- End section -->
+
+
+		<!-- Start Team Skills emang perlu?
+		=========================================== -->
+
+		<section id="team-skills" class="parallax-section">
+			<div class="container">
+				<div class="row wow fadeInDown" data-wow-duration="500ms">
+
+					<!-- section title -->
+					<div class="title text-center">
+						<h2>Our <span class="color">Skills</span></h2>
+						<div class="border"></div>
+					</div>
+					<!-- /section title -->
+
+					<!-- skill set -->
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+						<div class="skill-chart text-center">
+							<span class="chart" data-percent="80">
+								<span class="percent"></span>
+							</span>
+							<h3><i class="fa fa-wordpress"></i> Wordpress</h3>
+							<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
+						</div>
+					</div>
+					<!-- end skill set -->
+
+					<!-- skill set -->
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+						<div class="skill-chart text-center">
+							<span class="chart" data-percent="90">
+								<span class="percent">86</span>
+							</span>
+							<h3><i class="fa fa-html5"></i> HTML 5</h3>
+							<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
+						</div>
+					</div>
+					<!-- end skill set -->
+
+					<!-- skill set -->
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+						<div class="skill-chart text-center">
+							<span class="chart" data-percent="85">
+								<span class="percent"></span>
+							</span>
+							<h3><i class="fa fa-android"></i> Android</h3>
+							<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
+						</div>
+					</div>
+					<!-- end skill set -->
+
+					<!-- skill set -->
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="skill-chart text-center">
+							<span class="chart" data-percent="70">
+								<span class="percent"></span>
+							</span>
+							<h3><i class="fa fa-apple"></i> IOS</h3>
+							<p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
+						</div>
+					</div>
+					<!-- end skill set -->
+
+				</div>  		<!-- End row -->
+			</div>   	<!-- End container -->
+		</section>   <!-- End section -->
 
 		<!-- Start Our Team
-			=========================================== -->
+		=========================================== -->
 
-			<section id="our-team">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
+		<section id="our-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
 
 						<!-- section title -->
 						<div class="title text-center wow fadeInUp" data-wow-duration="500ms">
@@ -716,120 +654,113 @@ $this->load->view('fpHead');
 						</div>
 						<!-- end team member -->
 					</div>
-					</div>  	<!-- End row -->
-				</div>   	<!-- End container -->
-			</section>   <!-- End section -->
+				</div>  	<!-- End row -->
+			</div>   	<!-- End container -->
+		</section>   <!-- End section -->
 
 
 
 
 
 		<!-- Start Testimonial
-			=========================================== -->
+		=========================================== -->
 
-			<section id="testimonial" class="parallax-section">
-				<div class="container">
-					<div class="row">				
-						<div class="col-lg-12">
+		<section id="testimonial" class="parallax-section">
+			<div class="container">
+				<div class="row">				
+					<div class="col-lg-12">
+						<?php 
+						$random1 = rand(0,$jumlahTest-1);
+						$random2 = rand(0,$jumlahTest-1);
+							if($random1==$random2){
+								$random2 = rand(0,$jumlahTest-1); 
+							}
+							
+						 ?>
 
-							<!-- section title -->
-							<div class="sub-title text-center wow fadeInDown" data-wow-duration="500ms">
-								<h3>What People Say About Us</h3>
+						<!-- section title -->
+						<div class="sub-title text-center wow fadeInDown" data-wow-duration="500ms">
+							<h3>What People Say About Us</h3>
+						</div>
+						<!-- /section title -->
+
+						<!-- testimonial wrapper -->
+						<div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+
+							<!-- testimonial single -->
+							<div class="item text-center">
+
+								<!-- client photo -->
+								<div class="client-thumb">
+									<img src="<?php echo $test[0]['imageT'] ?>" alt="<?php echo $test[0]['namaTest']; ?>" class="img-responsive" alt="Meghna">
+								</div>
+								<!-- /client photo -->
+
+								<!-- client info -->
+								<div class="client-info">
+									<div class="client-meta">
+										<h3><?php echo $test[$random1]['namaTest']; ?></h3>
+										<span><?php echo $test[$random1]['tanggal']; ?></span>
+									</div>
+									<div class="client-comment">
+										<p><?php echo $test[$random1]['testimoni']; ?></p>
+									</div>
+								</div>
+								<!-- /client info -->
 							</div>
-							<!-- /section title -->
+							<!-- /testimonial single -->
 
-							<!-- testimonial wrapper -->
-							<div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+							<!-- testimonial single -->
+							<div class="item text-center">
 
-								<!-- testimonial single -->
-								<div class="item text-center">
-
-									<!-- client photo -->
-									<div class="client-thumb">
-										<img src="<?php echo base_url(); ?>/asset/img/team/client.jpg" class="img-responsive" alt="Meghna">
-									</div>
-									<!-- /client photo -->
-
-									<!-- client info -->
-									<div class="client-info">
-										<div class="client-meta">
-											<h3>Abul Mal Muhit</h3>
-											<span>Dec 26, 2014</span>
-										</div>
-										<div class="client-comment">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>
-											<ul class="social-profile">
-												<li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- /client info -->
+								<!-- client photo -->
+								<div class="client-thumb">
+									<img src="<?php echo $test[$random2]['imageT'] ?>" alt="<?php echo $test[$random2]['namaTest']; ?>" class="img-responsive" alt="Meghna">
 								</div>
-								<!-- /testimonial single -->
+								<!-- /client photo -->
 
-								<!-- testimonial single -->
-								<div class="item text-center">
-
-									<!-- client photo -->
-									<div class="client-thumb">
-										<img src="<?php echo base_url(); ?>/asset/img/team/client.jpg" class="img-responsive" alt="Meghna">
+								<!-- client info -->
+								<div class="client-info">
+									<div class="client-meta">
+										<h3><?php echo $test[$random2]['namaTest']; ?></h3>
+										<span><?php echo $test[$random2]['tanggal']; ?></span>
 									</div>
-									<!-- /client photo -->
-
-									<!-- client info -->
-									<div class="client-info">
-										<div class="client-meta">
-											<h3>Abul Mal Muhit</h3>
-											<span>Dec 26, 2014</span>
-										</div>
-										<div class="client-comment">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>
-											<ul class="social-profile">
-												<li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-											</ul>
-										</div>
+									<div class="client-comment">
+										<p><?php echo $test[$random2]['testimoni']; ?></p>
 									</div>
-									<!-- /client info -->
 								</div>
-								<!-- /testimonial single -->
+								<!-- /client info -->
+							</div>
+							<!-- /testimonial single -->
 
-								<!-- testimonial single -->
-								<div class="item text-center">
+							<!-- testimonial single -->
+							<div class="item text-center">
 
-									<!-- client photo -->
-									<div class="client-thumb">
-										<img src="<?php echo base_url(); ?>/asset/img/team/client.jpg" class="img-responsive" alt="Meghna">
-									</div>
-									<!-- /client photo -->
-
-									<!-- client info -->
-									<div class="client-info">
-										<div class="client-meta">
-											<h3>Abul Mal Muhit</h3>
-											<span>Dec 26, 2014</span>
-										</div>
-										<div class="client-comment">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>
-											<ul class="social-profile">
-												<li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- /client info -->
+								<!-- client photo -->
+								<div class="client-thumb">
+									<img src="<?php echo $test[2]['imageT'] ?>" alt="<?php echo $test[2]['namaTest']; ?>" class="img-responsive" alt="Meghna">
 								</div>
-								<!-- /testimonial single -->
+								<!-- /client photo -->
 
-							</div>		<!-- end testimonial wrapper -->
-						</div> 		<!-- end col lg 12 -->
-					</div>	    <!-- End row -->
-				</div>       <!-- End container -->
-			</section>    <!-- End Section -->
+								<!-- client info -->
+								<div class="client-info">
+									<div class="client-meta">
+										<h3><?php echo $test[2]['namaTest']; ?></h3>
+										<span><?php echo $test[2]['tanggal']; ?></span>
+									</div>
+									<div class="client-comment">
+										<p><?php echo $test[2]['testimoni']; ?></p>
+									</div>
+								</div>
+								<!-- /client info -->
+							</div>
+							<!-- /testimonial single -->
+
+						</div>		<!-- end testimonial wrapper -->
+					</div> 		<!-- end col lg 12 -->
+				</div>	    <!-- End row -->
+			</div>       <!-- End container -->
+		</section>    <!-- End Section -->
 
 
 		<!--
@@ -847,92 +778,100 @@ $this->load->view('fpHead');
 					</div>
 					<!-- /section title -->
 
-					<div class="clearfix">
+					<!-- single blog post -->
+					<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+						<div class="note">
+							<div id="gallery-post" class="media-wrapper">
+								<div class="item">
+									<img src="<?php echo $berita[0]['imageB'] ?>" alt="<?php echo $berita[0]['judul']; ?>" class="img-responsive">
+								</div>
+								<div class="item">
+									<img src="<?php echo $berita[0]['imageB'] ?>" alt="<?php echo $berita[0]['judul']; ?>" class="img-responsive">
+								</div>
+								<div class="item">
+									<img src="<?php echo $berita[0]['imageB'] ?>" alt="<?php echo $berita[0]['judul']; ?>" class="img-responsive">
+								</div>
+							</div>
+							
+							<div class="excerpt">
+								<h3><?php echo $berita[0]['judul']; ?></h3>
+								<p><?php echo $berita[0]['isiBerita']; ?></p>
+							</div>
+							<div class="coly">
+								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
+							</div>
+						</div>						
+					</article>
+					<!-- end single blog post -->
+					<!-- single blog post -->
+					<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+						<div class="note">
+							<div id="gallery-post" class="media-wrapper">
+								<div class="item">
+									<img src="<?php echo $berita[1]['imageB'] ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
+								</div>
+								<div class="item">
+									<img src="<?php echo $berita[1]['imageB'] ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
+								</div>
+								<div class="item">
+									<img src="<?php echo $berita[1]['imageB'] ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
+								</div>
+							</div>
+							
+							<div class="excerpt">
+								<h3><?php echo $berita[1]['judul']; ?></h3>
+								<p><?php echo $berita[1]['isiBerita']; ?></p>
+							</div>
+							<div class="coly">
+								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
+							</div>
+						</div>						
+					</article>
+					<!-- end single blog post -->
+					
+					<!-- single blog post -->
+					<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+						<div class="note">
+							<div class="media-wrapper">
+								<img src="<?php echo $berita[2]['imageB'] ?>" alt="<?php echo $berita[2]['judul']; ?>" class="img-responsive">
+							</div>
+							
+							<div class="excerpt">
+								<h3><?php echo $berita[2]['judul']; ?></h3>
+								<p><?php echo $berita[2]['isiBerita']; ?></p>
+							</div>
+							<div class="coly">
+								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
+							</div>
+						</div>						
+					</article>
+					<!-- end single blog post -->
+					
+					<!-- single blog post -->
+					<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="note kill-margin-bottom">
+							<div class="media-wrapper">
+								<img src="<?php echo $berita[3]['imageB'] ?>" alt="<?php echo $beritas[3]['judul']; ?>" class="img-responsive">
+							</div>
+							<div class="excerpt">
+								<h3><?php echo $berita[3]['judul']; ?></h3>
+								<p><?php echo $berita[3]['isiBerita']; ?></p>
+							</div>
+							<div class="coly">
+								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
+							</div>
+						</div>						
+					</article>
+					<!-- end single blog post -->
+				</div>
 
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 clearfix wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-							<div class="note">
-								<div id="gallery-post" class="media-wrapper">
-									<div class="item">
-										<img src="<?php echo base_url(); ?>/asset/img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-									</div>
+				<div class="all-post text-center">
+					<a class="btn btn-col" href="<?php echo site_url('home/keBlog')?>">View All Post</a>
+				</div>
 
-									<div class="item">
-											<img src="<?php echo base_url(); ?>/asset/img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-									</div>
-								</div>
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- /single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-							<div class="note">
-								<div id="gallery-post" class="media-wrapper">
-									<div class="item">
-										<img src="<?php echo base_url(); ?>/asset/img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-									</div>
-									<div class="item">
-										<img src="<?php echo base_url(); ?>/asset/img/blog/bicycle.jpg" alt="Flying bicycle" class="img-responsive">
-									</div>
-									<div class="item">
-										<img src="<?php echo base_url(); ?>/asset/img/blog/3D-beach-art.jpg" alt="3D Beach Art | Meghna" class="img-responsive">
-									</div>
-								</div>
-								
-								<div class="excerpt">
-									<h3>Simple Slider Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-							<div class="note">
-								<div class="media-wrapper">
-									<img src="<?php echo base_url(); ?>/asset/img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-								</div>
-								
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
-						
-						<!-- single blog post -->
-						<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-							<div class="note kill-margin-bottom">
-								<div class="media-wrapper">
-									<img src="<?php echo base_url(); ?>/asset/img/blog/amazing-caves-coverimage.jpg" alt="amazing caves coverimage" class="img-responsive">
-								</div>
-								<div class="excerpt">
-									<h3>Simple Image Post</h3>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-									<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
-								</div>
-							</div>						
-						</article>
-						<!-- end single blog post -->
-					</div>
-
-					<div class="all-post text-center">
-						<a class="btn btn-col" href="<?php echo site_url('home/keBlog')?>">View All Post</a>
-					</div>
-
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</section> <!-- end section -->
+			</div> <!-- end row -->
+		</div> <!-- end container -->
+	</section> <!-- end section -->
 	
 	<?php
 	$this->load->view('fpFooter');

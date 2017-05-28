@@ -36,41 +36,63 @@ class MyMod extends CI_Model {
     }
 
 
+  
 /*=================================================================
-	model berita
-==================================================================*/   
- function getby_id($id){
-            $this->db->where('idPost',$id);
-        $r= $this->db->get('berita');
-        if($r->num_rows() > 0){
-            return $r->row();
+    model crud berita
+==================================================================*/
+
+    
+    public function getBerita($where=""){
+        $data = $this->db->query('SELECT * FROM berita '.$where);
+        return $data->result_array();
+    }
+
+    public function update($tabelName, $data, $where){
+        $upd = $this->db->update($tabelName, $data, $where);
+        return $upd;
+    }
+
+    public function delete($tableName, $where){
+        $res = $this->db->delete($tableName, $where);
+        return $res;
+    }
+
+    public function save($url){
+        $this->db->set('pic', $url);
+        $this->db->insert('berita');
+    }
+
+/*=================================================================
+    model crud testimoni
+==================================================================*/
+    public function getTest($where=""){
+        $data = $this->db->query('SELECT * FROM testimoni '.$where);
+        return $data->result_array();
+    }
+    public function jumlahTest()
+        {
+            return $this->db->count_all('Testimoni');
         }
+        
+
+
+/*=================================================================
+    model crud testimoni
+==================================================================*/
+    public function getPorto($where=""){
+        $data = $this->db->query('SELECT * FROM portofolio '.$where);
+        return $data->result_array();
     }
-    function select(){
-        $result = $this->db->get('berita');
- 
-        if ($result->num_rows() > 0) :
-            return $result;
-        endif;
-    }
- 
-    function add(){
-        $judul = $this->input->post('judul');
-        $isi = $this->input->post('isiBerita');
-        $data = array('judul'=>$judul, 'isiBerita'=>$isi);
-        $this->db->insert('berita', $data);
-    }
- 
-    function update($id){
-        $judul = $this->input->post('judul');
-        $isi = $this->input->post('isiBerita');
-        $data = array('judul'=>$judul, 'isiBerita'=>$isi);
-        $this->db->where('idPost', $id);
-        $this->db->update('berita', $data);
-    }
- 
-    function delete($id){
-        $this->db->delete('berita', array('idPost' => $id));
+
+
+    /*=================================================================
+    model crud berita
+==================================================================*/
+
+    
+    public function getUser($where=""){
+        $data = $this->db->query('SELECT * FROM useradmin '.$where);
+        return $data->result_array();
     }
 
 

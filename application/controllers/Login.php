@@ -9,7 +9,7 @@ class Login extends CI_Controller{
     }
  
     function index(){
-        $this->load->view('login/logBod');
+        $this->load->view('login/login');
     }
  
     function aksi_login(){
@@ -32,6 +32,16 @@ class Login extends CI_Controller{
             redirect(base_url('index.php/admin1')); //controller
  
         }else{
+            
+             $data_session = array(
+                'nama' => $username,
+                'status' => "login"
+                );
+ 
+            $this->session->set_userdata($data_session);
+ 
+            redirect(base_url('index.php/admin1'));
+
             echo "Username dan password salah !";
         }
     }
