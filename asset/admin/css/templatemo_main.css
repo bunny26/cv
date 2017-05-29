@@ -24,6 +24,7 @@ http://www.templatemo.com/preview/templatemo_415_dashboard
 
 /* 2. General Styles
 --------------------------------------- */
+
 * { font-family: 'Open Sans', sans-serif; }
 body { background-color: rgb(235,235,235); }
 h1 { font-size: 24px; }
@@ -78,8 +79,10 @@ h1 { font-size: 24px; }
     padding: 20px, 0, 20px, 20px; 
 }*/
 .img-figure
-{
-    min-width: 300px;
+{   
+    overflow: hidden !important;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 /* 3. Sidebar

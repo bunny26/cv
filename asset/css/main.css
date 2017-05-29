@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-text {
 
-	color: #52658F;
+	color: #52658F !important;
 	text-align: justify;
 }
 
@@ -1392,7 +1392,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .entry .post-excerpt p{
 	padding: 0 20px;
-	color: #333A56;
+	color: #333A56 !important;
 }
 
 #gallery-post .owl-prev,
@@ -1742,7 +1742,7 @@ blockquote {
 }
 
 .coment1{
-	color: #333A56;
+	color: #333A56 !important;
 }
 
 .comment-list ul li {

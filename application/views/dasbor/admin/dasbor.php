@@ -20,13 +20,13 @@ $this->load->view('dasbor/admin/head')
 							
 							<div class="news">
 								<div class="img-figure">
-									<img src="<?php echo $Porto[0]['imageP']; ?>">
+									<img src="<?php echo base_url().$porto[0]['imageP']; ?>">
 								</div>	
 								<div class="title">
-									<h1><?php echo $Porto[0]['namaPorto'] ?></h1>
+									<h1><?php echo $porto[0]['namaPorto'] ?></h1>
 								</div>
 								<p class="description">
-									<?php echo $Porto[0]['keterangan'] ?>
+									<?php echo $porto[0]['keterangan'] ?>
 								</p>
 
 								<p class="more">
@@ -94,7 +94,7 @@ $this->load->view('dasbor/admin/head')
 								</tr>
 							</thead>
 							<tbody>
-								<?php foreach ($User as $u){ ?>
+								<?php foreach ($user as $u){ ?>
 								<tr>
 									<td><?php echo $u['id_user']; ?></td>
 									<td><?php echo $u['nama']; ?></td>
