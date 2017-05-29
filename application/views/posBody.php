@@ -58,11 +58,11 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                        
-                        <div class="blog-icon">
+                        <div class="icon-box">
                             <i class="fa fa-book fa-4x"></i>
                         </div>
                         <div class="blog-title">
-                            <h1>Welcome to Our Blog</h1>
+                            <h1>Welcome to Our Pos</h1>
                         </div>
                         
                     </div>     <!-- End col-lg-12 -->
@@ -77,45 +77,47 @@
             <div class="container">
                 <div class="row">
                    
-                    <div id="blog-posts" class="col-md-8 col-sm-8">
+                    <div id="blog-posts" class="col-md-12 col-sm-6">
                         <div class="post-item">
                            
                            <!-- Single Post -->
                            <?php foreach($berita as $d){ ?>
                             <article class="entry wow fadeInDown"  data-wow-duration="1000ms" data-wow-delay="300ms">                               
                                 <div class="post-thumb">
+                                    <div class="col-md-offset-4">
                                     <a href="single-post.html">
                                         <img src="<?php echo base_url().$d['imageB']?>" alt="3D Beach Art | Meghna" class="img-responsive">
                                     </a>
                                 </div>
-                                <div class="post-excerpt">
-                                    <h3><a href="single-post.html"><?php echo $d['judul']?></a></h3>
+                                </div>
+                                <div class="post-excerpt pos">
+                                    <h3 class="pos"><a href="single-post.html"><?php echo $d['judul']?></a></h3>
                                     
                                     <p><?php echo $d['isiBerita']?></p>
 
                                 </div>
                                 <div class="post-meta">
                                     <span class="post-date">
-                                        <i class="fa fa-calendar"></i>30 jun 2014
+                                        <i class="fa fa-calendar"></i>
                                     </span>
                                     <span class="comments">
-                                        <i class="fa fa-comments"></i>18 Comments
+                                        <i class="fa fa-comments"></i>
                                     </span>
                                     <span class="post-view">
-                                        <i class="fa fa-eye"></i>265 Views
+                                        <i class="fa fa-eye"></i>
                                     </span>
                                     <span class="author">
-                                        <i class="fa fa-user"></i><a href="#">Admin</a>
+                                        <i class="fa fa-user"></i><a href="#">Suganda</a>
                                     </span>
                                     <span class="post-tags">
-                                        <i class="fa fa-tags"></i><a href="#">Web Design</a>, <a href="#">Development</a>
+                                        <i class="fa fa-tags"></i><a href="#">Konstruksi</a>, <a href="#">Arsitekur</a>
                                     </span>
                                 </div>
                             </article>
                             <?php } ?>
                             <!-- End Single Post -->
                             
-                            <div class="next-prev clearfix">
+                            <div class="next-prev clearfix pos">
                                 <a href="" class="prev-post">
                                     <i class="fa fa-angle-left fa-2x"></i>Previous Post
                                 </a>
@@ -146,8 +148,8 @@
                                
                             </div>
                             
-                            <div class="comment-reply-form">
-                               <h3>Leave a Replay</h3>
+                            <div class="comment-reply-form pos">
+                               <h3 >Leave a Replay</h3>
                                 <form id="comment-form" method="post" action="#">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Name *" id="name" name="name" required>
@@ -165,7 +167,7 @@
                                         <textarea class="form-control" placeholder="Message *" id="message" name="message" rows="5" cols="5" required></textarea>
                                     </div>
                                     <!-- End .form-group -->
-                                    <div class="form-group">
+                                    <div class="form-group btn">
                                         <input type="submit" id="post-comment" value="Post Comment" class="btn btn-transparent">
                                     </div>
                                     <!-- End .form-group -->
@@ -181,19 +183,13 @@
                        <!-- Single Widget -->
                         <aside class="widget wow fadeInDown">
                             <div class="widget-title">
-                               <h3>Tag Cloud</h3>
+                               
                             </div>
                             <div class="widget-content">
-                                <a class="tag" href="#">Mobile</a>
-                                <a class="tag" href="#">Web</a>
-                                <a class="tag" href="#">Electronics</a>
-                                <a class="tag" href="#">SEO</a>
-                                <a class="tag" href="#">Business Story</a>
-                                <a class="tag" href="#">Post Query</a>
-                                <a class="tag" href="#">HTML5</a>
-                                <a class="tag" href="#">CSS3</a>
-                                <a class="tag" href="#">jQuery</a>
-                                <a class="tag" href="#">Javascript</a>
+                                <a class="tag" href="#">Semua</a>
+                                <a class="tag" href="#">Bangunan</a>
+                                <a class="tag" href="#">Pos</a>
+                                <a class="tag" href="#">Cerita</a>
                             </div>
                         </aside>
                         <!-- End Single Widget -->

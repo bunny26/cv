@@ -51,6 +51,9 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 	border:1px solid #E8E8E8 !important
 }
 
+.pos h3, a {
+	color: #333A56 !important;
+}
 /*=================================================================
 	Basic Setup
 ==================================================================*/
@@ -107,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
     background-color: transparent;
-    color: #fff;
+    color: #52658F;
     padding: 10px 30px;
 	border-radius: 0;
     margin-top: 15px;
@@ -142,9 +145,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-transparent:hover {
-    background-color: #6cb670;
+    background-color: #E8E8E8;
 	border: 1px solid transparent;
-    color: #fff;
+    color: #52658F;
 }
 
 .form-control {
@@ -324,6 +327,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-brand {
+	float: left !important;
+	height: 50%;
 	height: auto;
 	padding: 8px 0;
 }
@@ -333,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #fff;
+    color: #fff !important;
     font-size: 14px;
     line-height: 26px;
     padding: 20px 15px;
@@ -862,8 +867,17 @@ h1, h2, h3, h4, h5, h6 {
 .img-responsive 
 {
 	display:block !important;
-	max-width : auto !important;
-	min-height: auto; !important;
+	max-width : 300px !important;
+	min-height: auto !important;
+	overflow: hidden;
+
+}
+
+.custom 
+{
+	overflow: hidden;
+	min-width: 300px;
+	height: auto;
 
 }
 
@@ -1120,9 +1134,11 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #c09f80; 
 }
 
-/*.note .media-wrapper {
+.media-wrapper {
 	border-bottom: 1px  transparent;
-}*/
+	overflow: hidden;
+	height: 300px;
+}
 
 .note .excerpt {
 	padding: 0 10px 20px;
@@ -1348,7 +1364,7 @@ h1, h2, h3, h4, h5, h6 {
 #blog-banner {
 	padding-bottom: 100px;
     padding-top: 150px;
-    background-color: #18121E
+    background-color: #F7F5E6;
 }
 
 .blog-icon {
@@ -1361,11 +1377,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-title h1 {
     text-transform: uppercase;
+    color:#333A56;
 }
 
 #blog-page {
 	margin: 0 0 40px;
-	background-color: #18121E;
+	background-color: #F7F5E6;
 }
 
 .post-item .entry {
@@ -1373,9 +1390,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 30px;
 }
 
-.entry .post-excerpt {
+.entry .post-excerpt p{
 	padding: 0 20px;
-	color: #fff;
+	color: #333A56;
 }
 
 #gallery-post .owl-prev,
@@ -1385,6 +1402,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5px 17px;
     position: absolute;
     top: 45%;
+    overflow: hidden !important;
 
 	-webkit-transition: all .5s ease-in 0s;
 	   -moz-transition: all .5s ease-in 0s;
@@ -1563,7 +1581,7 @@ aside.widget {
 
 .widget-content .tag {
 	background-color: #2F383D;
-	color: #fff;
+	color: #fff !important;
 	display: inline-block;
 	margin-bottom: 10px;
 	margin-right: 5px;
@@ -1737,6 +1755,7 @@ blockquote {
 
 #comment-form {
     margin-top: 35px;
+    color: #F4F4F4 !important;
 }
 
 #comment-form .form-control:hover {
@@ -1746,5 +1765,7 @@ blockquote {
 .form-group:last-child,
 .form-group:last-child input {
   margin: 0;
+  color: #E8E8E8 !important;
+  background-color: #F4F4F4
 }
                             

@@ -105,9 +105,9 @@ $this->load->view('fpHead');
         			<!-- logo -->
         			<a class="navbar-brand" href="#body">
         				<!-- buka w3school buat cocokin gambar -->
-        				<div id="logo">
-        					<img src="<?php echo base_url(); ?>/asset/img/logos/cv.jpg" style="width: 20%; height:20%; " alt="Meghna" /> 
-
+        				<div id="logo" class="navbar-brand">
+        					<!-- <img src="<?php echo base_url(); ?>/asset/images/berita/cv.PNG" style="width: 20%; height:20%; " alt="Meghna" />  -->
+        					SANDI UTAMA ARCH.
         				</div>
         			</a>
         			<!-- /logo -->

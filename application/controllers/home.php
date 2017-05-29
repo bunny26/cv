@@ -36,6 +36,7 @@ class Home extends CI_Controller {
 
 	public function kePos(){
 		$data['berita'] = $this->MyMod->GetBerita();
+		$data['test'] = $this->MyMod->getTest();
 		$this->load->view('posBody', $data);
 	}
 }
