@@ -11,10 +11,10 @@ class Admin1 extends CI_Controller{
     }
  
     function index(){
-    	$data['Berita'] = $this->MyMod->GetBerita();
-		$data['Porto'] = $this->MyMod->getPorto();
-		$data['Testimoni'] = $this->MyMod->getTest();
-		$data['User'] = $this->MyMod->getUser();
+        $data['Berita'] = $this->MyMod->GetBerita();
+        $data['Porto'] = $this->MyMod->getPorto();
+        $data['Testimoni'] = $this->MyMod->getTest();
+        $data['User'] = $this->MyMod->getUser();
         $this->load->view('dasbor/admin/dasbor', $data); //
     }
 }

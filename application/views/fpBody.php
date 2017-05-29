@@ -371,11 +371,11 @@ $this->load->view('fpHead');
 					<?php foreach($porto as $d){ ?>
 					<?php if ($d['kategori'] === "kontruksi"){ ?>
 					<li class="mix app">
-						<a href="<?php echo site_url('kePost') ?>" data-largesrc="<?php echo $d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
+						<a href="<?php echo site_url('kePost') ?>" data-largesrc="<?php echo base_url().$d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
 							<!-- src="<?php echo $data[3]['imageB'] ?>" alt="<?php echo $data[3]['judul']; ?>" 
 							<img src="<?php echo base_url(); ?>/asset/img/portfolio/1.jpg" alt="Meghna">
 							-->
-							<img src="<?php echo $d['imageP'] ?>" alt="<?php echo $d['namaPorto']; ?>">
+							<img src="<?php echo base_url().$d['imageP'] ?>" alt="<?php echo $d['namaPorto']; ?>">
 							<div class="hover-mask">
 								<h3><?php echo $d['namaPorto'] ?></h3>
 								<span>
@@ -391,8 +391,8 @@ $this->load->view('fpHead');
 					<?php foreach($porto as $d){ ?>
 					<?php if ($d['kategori'] === "desainInte"){ ?>
 					<li class="mix web">
-						<a href="javascript:void(0)" data-largesrc="<?php echo $d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
-							<img src="<?php echo $d['imageP'] ?>" alt="<?php echo $d['namaPorto']; ?>">
+						<a href="javascript:void(0)" data-largesrc="<?php echo base_url().$d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
+							<img src="<?php echo base_url().$d['imageP'] ?>" alt="<?php echo $d['namaPorto']; ?>">
 							<div class="hover-mask">
 								<h3><?php echo $d['namaPorto'] ?></h3>
 								<span>
@@ -408,8 +408,8 @@ $this->load->view('fpHead');
 					<?php foreach($porto as $d){ ?>
 					<?php if ($d['kategori'] === "arsitektur"){ ?>
 					<li class="mix poo">
-						<a href="javascript:void(0)" data-largesrc="<?php echo $d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
-							<img src="<?php echo $d['imageP'] ?>" alt="<?php echo $d['namaPorto']; ?>">
+						<a href="javascript:void(0)" data-largesrc="<?php echo base_url().$d['imageP'] ?>" data-title="<?php echo $d['namaPorto'] ?>" data-description="<?php echo $d['keterangan']; ?>">
+							<img src="<?php echo base_url().$d['imageP'] ?>" alt="<?php echo $d['namaPorto']; ?>">
 							<div class="hover-mask">
 								<h3><?php echo $d['namaPorto'] ?></h3>
 								<span>
@@ -660,11 +660,15 @@ $this->load->view('fpHead');
 				<div class="row">				
 					<div class="col-lg-12">
 						<?php 
-						$random1 = rand(0,$jumlahTest-1);
-						$random2 = rand(0,$jumlahTest-1);
-							if($random1==$random2){
-								$random2 = rand(0,$jumlahTest-1); 
-							}
+						$random1 = rand(0,$jumlahT-1);
+						$random2 = rand(0,$jumlahT-1);
+						$random3 = rand(0,$jumlahT-1);
+
+							while ($random1===$random2 || $random1===$random3 || $random2===$random3){
+								$random2 = rand(0,$jumlahT-1); 
+								$random3 = rand(0,$jumlahT-1);
+							}		
+
 							
 						 ?>
 
@@ -682,7 +686,7 @@ $this->load->view('fpHead');
 
 								<!-- client photo -->
 								<div class="client-thumb">
-									<img src="<?php echo $test[0]['imageT'] ?>" alt="<?php echo $test[0]['namaTest']; ?>" class="img-responsive" alt="Meghna">
+									<img src="<?php echo base_url().$test[$random1]['imageT'] ?>" alt="<?php echo base_url().$test[$random1]['namaTest']; ?>" class="img-responsive" alt="Meghna">
 								</div>
 								<!-- /client photo -->
 
@@ -705,12 +709,12 @@ $this->load->view('fpHead');
 
 								<!-- client photo -->
 								<div class="client-thumb">
-									<img src="<?php echo $test[$random2]['imageT'] ?>" alt="<?php echo $test[$random2]['namaTest']; ?>" class="img-responsive" alt="Meghna">
+									<img src="<?php echo base_url().$test[$random2]['imageT'] ?>" alt="<?php echo base_url().$test[$random2]['namaTest']; ?>" class="img-responsive" alt="Meghna">
 								</div>
 								<!-- /client photo -->
 
 								<!-- client info -->
-								<!-- <div class="client-info">
+								<div class="client-info">
 									<div class="client-meta">
 										<h3><?php echo $test[$random2]['namaTest']; ?></h3>
 										<span><?php echo $test[$random2]['tanggal']; ?></span>
@@ -718,32 +722,32 @@ $this->load->view('fpHead');
 									<div class="client-comment">
 										<p><?php echo $test[$random2]['testimoni']; ?></p>
 									</div>
-								</div> -->
+								</div>
 								<!-- /client info -->
-							<!-- </div> -->
+							</div>
 							<!-- /testimonial single -->
 
 							<!-- testimonial single -->
-							<!-- <div class="item text-center"> -->
+							<div class="item text-center">
 
 								<!-- client photo -->
-								<!-- <div class="client-thumb">
-									<img src="<?php echo $test[2]['imageT'] ?>" alt="<?php echo $test[2]['namaTest']; ?>" class="img-responsive" alt="Meghna">
-								</div> -->
+								<div class="client-thumb">
+									<img src="<?php echo base_url().$test[$random3]['imageT'] ?>" alt="<?php echo base_url().$test[$random3]['namaTest']; ?>" class="img-responsive" alt="Meghna">
+								</div>
 								<!-- /client photo -->
 
 								<!-- client info -->
-								<!-- <div class="client-info">
+								<div class="client-info">
 									<div class="client-meta">
-										<h3><?php echo $test[2]['namaTest']; ?></h3>
-										<span><?php echo $test[2]['tanggal']; ?></span>
+										<h3><?php echo $test[$random3]['namaTest']; ?></h3>
+										<span><?php echo $test[$random3]['tanggal']; ?></span>
 									</div>
 									<div class="client-comment">
-										<p><?php echo $test[2]['testimoni']; ?></p>
-									</div> -->
+										<p><?php echo $test[$random3]['testimoni']; ?></p>
+									</div>
 								</div>
 								<!-- /client info -->
-							<!-- </div> -->
+							</div>
 							<!-- /testimonial single -->
 
 						</div>		<!-- end testimonial wrapper -->
@@ -773,22 +777,23 @@ $this->load->view('fpHead');
 						<div class="note">
 							<div id="gallery-post" class="media-wrapper">
 								<div class="item">
-									<img src="<?php echo $berita[0]['imageB'] ?>" alt="<?php echo $berita[0]['judul']; ?>" class="img-responsive">
+									<img src="<?php echo base_url().$berita[0]['imageB'] ?>" alt="<?php echo $berita[0]['judul']; ?>" class="img-responsive">
 								</div>
 								<div class="item">
-									<img src="<?php echo $berita[0]['imageB'] ?>" alt="<?php echo $berita[0]['judul']; ?>" class="img-responsive">
+									<img src="<?php echo base_url().$berita[0]['imageB'] ?>" alt="<?php echo $berita[0]['judul']; ?>" class="img-responsive">
 								</div>
 								<div class="item">
-									<img src="<?php echo $berita[0]['imageB'] ?>" alt="<?php echo $berita[0]['judul']; ?>" class="img-responsive">
+									<img src="<?php echo base_url().$berita[0]['imageB'] ?>" alt="<?php echo $berita[0]['judul']; ?>" class="img-responsive">
 								</div>
 							</div>
 							
 							<div class="excerpt">
 								<h3><?php echo $berita[0]['judul']; ?></h3>
-								<p><?php echo $berita[0]['isiBerita']; ?></p>
+								<p><?php echo substr($berita[0]['isiBerita'],0,300); echo ".."; ?></p>
 							</div>
 							<div class="coly">
-								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
+								<!-- <a class="btn btn-col" href="<?php// echo site_url('home/kePos')?>">Read more</a> -->
+								<a class="btn btn-col" href="<?php echo base_url().'index.php/home/getDetail/'.$berita[0]['idPost']?>"> Read More</a>
 							</div>
 						</div>						
 					</article>
@@ -798,22 +803,22 @@ $this->load->view('fpHead');
 						<div class="note">
 							<div id="gallery-post" class="media-wrapper">
 								<div class="item">
-									<img src="<?php echo substr($berita[1]['imageB'],0,300); ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
+									<img src="<?php echo base_url().$berita[1]['imageB'] ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
 								</div>
 								<div class="item">
-									<img src="<?php echo substr($berita[1]['imageB'],0,300); ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
+									<img src="<?php echo base_url().$berita[1]['imageB'] ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
 								</div>
 								<div class="item">
-									<img src="<?php echo substr($berita[1]['imageB'],0,300); ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
+									<img src="<?php echo base_url().$berita[1]['imageB'] ?>" alt="<?php echo $berita[1]['judul']; ?>" class="img-responsive">
 								</div>
 							</div>
 							
 							<div class="excerpt">
-								<h3><?php echo substr($berita[1]['judul'],0,300); ?></h3>
-								<p><?php echo substr($berita[1]['isiBerita'],0,300); ?></p>
+								<h3><?php echo $berita[1]['judul']; ?></h3>
+								<p><?php echo substr($berita[1]['isiBerita'],0,300); echo "..";  ?></p>
 							</div>
 							<div class="coly">
-								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
+								<a class="btn btn-col" href="<?php echo base_url().'index.php/home/getDetail/'.$berita[1]['idPost']?>"> Read More</a>
 							</div>
 						</div>						
 					</article>
@@ -823,15 +828,16 @@ $this->load->view('fpHead');
 					<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
 						<div class="note">
 							<div class="media-wrapper">
-								<img src="<?php echo $berita[2]['imageB'] ?>" alt="<?php echo $berita[2]['judul']; ?>" class="img-responsive">
+								<img src="<?php echo base_url().$berita[2]['imageB'] ?>" alt="<?php echo $berita[2]['judul']; ?>" class="img-responsive">
 							</div>
 							
 							<div class="excerpt">
-								<h3><?php echo substr ($berita[2]['judul'],0,300); ?></h3>
-								<p><?php echo substr($berita[2]['isiBerita'],0,300); ?></p>
+								<h3><?php echo $berita[2]['judul']; ?></h3>
+								<p><?php echo substr($berita[2]['isiBerita'],0,300); echo "..";  ?></p>
 							</div>
 							<div class="coly">
-								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
+								<a class="btn btn-col" href="<?php echo base_url().'index.php/home/getDetail/'.$berita[2]['idPost']?>"> Read More</a>
+
 							</div>
 						</div>						
 					</article>
@@ -841,14 +847,14 @@ $this->load->view('fpHead');
 					<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
 						<div class="note kill-margin-bottom">
 							<div class="media-wrapper">
-								<img src="<?php echo $berita[2]['imageB'] ?>" alt="<?php echo $berita[2]['judul']; ?>" class="img-responsive">
+								<img src="<?php echo base_url().$berita[3]['imageB'] ?>" alt="<?php echo $berita[3]['judul']; ?>" class="img-responsive">
 							</div>
 							<div class="excerpt">
-								<h3><?php echo substr($berita[2]['judul'],0,300); ?></h3>
-								<p><?php echo substr($berita[2]['isiBerita'],0,300); ?></p>
+								<h3><?php echo $berita[3]['judul']; ?></h3>
+								<p><?php echo substr($berita[3]['isiBerita'],0,300); echo "..";  ?></p>
 							</div>
 							<div class="coly">
-								<a class="btn btn-col" href="<?php echo site_url('home/kePos')?>">Read more</a>
+								<a class="btn btn-col" href="<?php echo base_url().'index.php/home/getDetail/'.$berita[3]['idPost']?>"> Read More</a>
 							</div>
 						</div>						
 					</article>
