@@ -200,7 +200,7 @@ $this->load->view('fpHead');
 
 							<!-- features media -->
 							<div class="col-md-6 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
-								<iframe src="https://www.youtube.com/watch?v=xuMFlMMz--4" allowfullscreen></iframe>
+								<img src="<?php echo base_url()."asset/images/berita/13.jpg" ?>">
 							</div>
 							<!-- /features media -->
 

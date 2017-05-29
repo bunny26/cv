@@ -1541,8 +1541,8 @@ aside.widget {
 	margin-bottom: 10px;
 }
 
-.tab-excerpt h4 a {
-	color: #fff;
+.tab-excerpt h4, p {
+	color: #fff !important;
 }
 
 .tab-excerpt h4 a:hover {

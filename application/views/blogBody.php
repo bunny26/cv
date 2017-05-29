@@ -128,35 +128,25 @@
                        
                        <!-- Single Widget -->
                         <aside class="widget wow fadeInUp"  data-wow-duration="1000ms">
-                            <div class="widget-title">
-                               <h3>Search</h3>
-                            </div>
-                           <div class="widget-content">
-                                <form action="#" id="search-form" method="get" role="search">
-                                    <input type="text" class="form-control" placeholder="Search..." autocomplete="on" name="seach">
-                                    <button type="submit" title="Search" id="search-submit">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </form>
-                           </div>
+                           
                         </aside>
                         <!-- End Single Widget -->
                         
                        <!-- Single Widget -->
-                        <aside class="widget wow fadeInDown">
+                      <!--   <aside class="widget wow fadeInDown">
                             <div class="widget-title">
                                <h3>Text Widget</h3>
                             </div>
                             <div class="widget-content">
                                 <p class="coment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ducimus in dolorum accusantium voluptate nostrum, excepturi dolores voluptatem vel rerum at, recusandae inventore nobis ex eveniet sunt eligendi, qui provident.</p>
                             </div>
-                        </aside>
+                        </aside> -->
                         <!-- End Single Widget -->
                        
                        <!-- Single Widget -->
                         <aside class="widget wow fadeInUp">
                             <div class="widget-title">
-                                <h3>Tab  Widget</h3>
+                                <h3 class="pos">Tab  Widget</h3>
                             </div>
                                 
                             <div class="widget-content">
@@ -176,9 +166,9 @@
                                                 <img src="<?php echo base_url(); ?>/asset/img/blog/3D-beach-art.jpg" class="img-responsive" alt="3D Beach Art | Meghna">
                                             </div>
                                             <div class="tab-excerpt">
-                                                <h4><a href="single.html">Post Title Demo</a></h4>
+                                                <h4><a href="<?php echo base_url().'index.php/home/getDetail/'.$berita[0]['idPost']?>"><?php echo $berita[0]['judul'] ?></a></h4>
                                                 <span>November 15 2014</span>
-                                                <p class="coment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laboriosam molestiae aliquam rem enim earum eos suscipit! Dolore, molestiae, quidem quo quam deleniti ullam dicta. Incidunt, quaerat est deserunt voluptatum.</p>
+                                                <p ><?php echo substr($berita[0]['isiBerita'],0,300); echo "..";  ?></p>
                                             </div>
                                         </div>
                                         <div class="clearfix">
@@ -186,35 +176,13 @@
                                                 <img src="<?php echo base_url(); ?>/asset/img/blog/amazing-caves-coverimage.jpg" class="img-responsive" alt="amazing-caves-coverimage | Meghna">
                                             </div>
                                             <div class="tab-excerpt">
-                                                <h4><a href="single.html">Post Title Demo</a></h4>
+                                                <h4><a href="<?php echo base_url().'index.php/home/getDetail/'.$berita[1]['idPost']?>"><?php echo $berita[1]['judul'] ?></a></h4>
                                                 <span>November 15 2014</span>
-                                                <p class="coment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laboriosam molestiae aliquam rem enim earum eos suscipit! Dolore, molestiae, quidem quo quam deleniti ullam dicta. Incidunt, quaerat est deserunt voluptatum.</p>
+                                                <p ><?php echo substr($berita[1]['isiBerita'],0,300); echo "..";  ?></p>
                                             </div>
                                         </div>
                                     </article>
-                                    
-                                    <article class="tab-pane tab-post" id="recent">
-                                        <div class="clearfix">
-                                            <div class="tab-thumb">
-                                                <img src="<?php echo base_url(); ?>/asset/img/blog/amazing-caves-coverimage.jpg" class="img-responsive" alt="amazing-caves-coverimage | Meghna">
-                                            </div>
-                                            <div class="tab-excerpt">
-                                                <h4><a href="single.html">Post Title Demo</a></h4>
-                                                <span>November 15 2014</span>
-                                                <p class="coment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laboriosam molestiae aliquam rem enim earum eos suscipit! Dolore, molestiae, quidem quo quam deleniti ullam dicta. Incidunt, quaerat est deserunt voluptatum.</p>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix">
-                                            <div class="tab-thumb">
-                                                <img src="<?php echo base_url(); ?>/asset/img/blog/3D-beach-art.jpg" class="img-responsive" alt="3D Beach Art | Meghna">
-                                            </div>
-                                            <div class="tab-excerpt">
-                                                <h4><a href="single.html">Post Title Demo</a></h4>
-                                                <span>November 15 2014</span>
-                                                <p class="coment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laboriosam molestiae aliquam rem enim earum eos suscipit! Dolore, molestiae, quidem quo quam deleniti ullam dicta. Incidunt, quaerat est deserunt voluptatum.</p>
-                                            </div>
-                                        </div>
-                                    </article>  
+                                     
                                     
                                     <article class="tab-pane tab-post" id="most-viewed">
                                         <div class="clearfix">
@@ -222,9 +190,9 @@
                                                 <img src="<?php echo base_url(); ?>/asset/img/blog/bicycle.jpg" class="img-responsive" alt="bicycle | Meghna">
                                             </div>
                                             <div class="tab-excerpt">
-                                                <h4><a href="single.html">Post Title Demo</a></h4>
+                                                <h4><a href="<?php echo base_url().'index.php/home/getDetail/'.$berita[2]['idPost']?>"><?php echo $berita[2]['judul'] ?></a></h4>
                                                 <span>November 15 2014</span>
-                                                <p class="coment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laboriosam molestiae aliquam rem enim earum eos suscipit! Dolore, molestiae, quidem quo quam deleniti ullam dicta. Incidunt, quaerat est deserunt voluptatum.</p>
+                                                <p ><?php echo substr($berita[2]['isiBerita'],0,300); echo "..";  ?></p>
                                             </div>
                                         </div>
                                         <div class="clearfix">
@@ -232,9 +200,9 @@
                                                 <img src="<?php echo base_url(); ?>/asset/img/blog/3D-beach-art.jpg" class="img-responsive" alt="3D Beach Art | Meghna">
                                             </div>
                                             <div class="tab-excerpt">
-                                                <h4><a href="single.html">Post Title Demo</a></h4>
+                                                <h4><a href="<?php echo base_url().'index.php/home/getDetail/'.$berita[3]['idPost']?>"><?php echo $berita[3]['judul'] ?></a></h4>
                                                 <span>November 15 2014</span>
-                                                <p class="coment1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laboriosam molestiae aliquam rem enim earum eos suscipit! Dolore, molestiae, quidem quo quam deleniti ullam dicta. Incidunt, quaerat est deserunt voluptatum.</p>
+                                                <p ><?php echo substr($berita[3]['isiBerita'],0,300); echo "..";  ?></p>
                                             </div>
                                         </div>
                                     </article>                                  
