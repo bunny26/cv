@@ -9,8 +9,35 @@ $this->load->view('dasbor/admin/head');
 			<li class="active">Email</li>
 		</ol>
 
+		<center><h1>Tutorial primasaja.com</h1></center>
+		<h2>Fitur pengiriman pesan ke email</h2>
+		<table>
+			<?php echo form_open_multipart('email/prosespengiriman'); ?>
+			<tbody>
+				<tr>
+					<td>Ke</td>
+					<td><input type="email" name="to"></td>
+				</tr>
+				<tr>
+					<td>Dari</td>
+					<td><input type="email" name="from"></td>
+				</tr>
+				<tr>
+					<td>Subject / judul</td>
+					<td><input type="text" name="subject"></td>
+				</tr>
+				<tr>
+					<td>Isi Pesan</td>
+					<td><textarea name="isi"></textarea></td>
+				</tr>
 
-		<div class="container">
+				<td></td>
+				<td><input type="submit" value="Kirim"></td>
+			</tr>
+		</tbody>
+		<?php echo form_close();?>
+	</table>
+		<!-- <div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<form method="POST" action="<?php echo base_url()."index.php/admin/do_insertMail"; ?> " enctype="multipart/form-data">
@@ -54,7 +81,7 @@ $this->load->view('dasbor/admin/head');
 						</table>
 						</form>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
