@@ -4,12 +4,12 @@ $this->load->view('dasbor/admin/head');
 <div class="templatemo-content-wrapper">
     <div class="templatemo-content">
         <ol class="breadcrumb">
-            <li><a href="<?php echo base_url('admin/rumah'); ?>">Admin Panel</a></li>
+            <li><a href="<?php echo base_url('index.php/Admin/rumah'); ?>">Admin Panel</a></li>
             <li><a href="#">Dashboard</a></li>
             <li class="active">Portofolio</li>
         </ol>
 
-        <form method="POST" action="<?php echo base_url()."index.php/admin/do_insertB"; ?> " enctype="multipart/form-data">
+        <form method="POST" action="<?php echo base_url()."index.php/Admin/do_insertB"; ?> " enctype="multipart/form-data">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">

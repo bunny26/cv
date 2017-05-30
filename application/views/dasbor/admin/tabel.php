@@ -57,14 +57,14 @@
                       <td><?php echo $U['nama']; ?></td>
                       <td>@js</td>
                       <td>a@company.com</td>
-                      <td><a href="<?php echo site_url('admin/edit_dataU'); ?>" class="btn btn-default">Edit</a></td>
+                      <td><a href="<?php echo site_url('index.php/Admin/edit_dataU'); ?>" class="btn btn-default">Edit</a></td>
                       <td><a href="<?php echo site_url('admin/do_deleteU') ?>" class="btn btn-default">Delete</a></td></td>
                     </tr>
                     <?php } ?>
                   </tbody>
                 </table>
               </div>
-              <span class="btn btn-primary"><a href="<?php echo site_url('admin/add_dataU') ?>">Tambah User</a></span>
+              <span class="btn btn-primary"><a href="<?php echo site_url('index.php/Admin/add_dataU') ?>">Tambah User</a></span>
 
             </div>
           </div>

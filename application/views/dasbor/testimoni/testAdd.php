@@ -4,7 +4,7 @@ $this->load->view('dasbor/admin/head');
 <div class="templatemo-content-wrapper">
     <div class="templatemo-content">
         <ol class="breadcrumb">
-            <li><a href="<?php echo base_url('admin/rumah'); ?>">Admin Panel</a></li>
+            <li><a href="<?php echo base_url('index.php/Admin/rumah'); ?>">Admin Panel</a></li>
             <li><a href="#">Dashboard</a></li>
             <li class="active">Portofolio</li>
         </ol>
@@ -15,7 +15,7 @@ $this->load->view('dasbor/admin/head');
                     <div class="btn-group pull-left" id="templatemo_sort_btn">  
                         <h4 class="margin-bottom-15">Tambah Data</h4> 
                         <td>Gambar</td>
-                        <form class="templatemo-content-wrapper" method="POST" action="<?php echo base_url()."index.php/admin/do_insertT"; ?> " enctype="multipart/form-data">
+                        <form class="templatemo-content-wrapper" method="POST" action="<?php echo base_url()."index.php/Admin/do_insertT"; ?> " enctype="multipart/form-data">
                            <table class="table-responsive">       
                             <tr>
                                 <input type="hidden" name="size" value="100000">

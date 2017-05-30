@@ -23,7 +23,7 @@
    $config['smtp_port']= "465";
    $config['smtp_timeout']= "5";
    $config['smtp_user']= "54maret@gmail.com";              //isi dengan email anda
-   $config['smtp_pass']= "Hakuna matata26.";            // isi dengan password dari email anda
+   $config['smtp_pass']= "1438Hakuna";            // isi dengan password dari email anda
    $config['crlf']="\r\n";
    $config['newline']="\r\n";
   

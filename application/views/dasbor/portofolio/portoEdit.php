@@ -15,7 +15,7 @@ $this->load->view('dasbor/admin/head')
          <div class="col-md-12">
           <h4 class="margin-bottom-15">Edit Portofolio</h4>
 
-          <form method="POST" action="<?php echo base_url()."index.php/admin/do_updateP"; ?>">
+          <form method="POST" action="<?php echo base_url()."index.php/Admin/do_updateP"; ?>">
             
              <table class="table-responsive">
               <div class="input-group" class="templatemo-content-wrapper" >

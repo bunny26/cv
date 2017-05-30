@@ -1,5 +1,5 @@
 <?php 
-$this->load->view('dasbor/admin/head')
+$this->load->view('dasbor/index.php/Admin/head')
 ?> 
 
 <div class="templatemo-content-wrapper">
@@ -49,7 +49,7 @@ $this->load->view('dasbor/admin/head')
 								</p>
 
 								<p class="more">
-									<a href="<?php echo site_url('admin/crudporto'); ?>">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+									<a href="<?php echo site_url('index.php/Admin/crudporto'); ?>">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
 								</p>
 							</div>
 						</div>
@@ -68,7 +68,7 @@ $this->load->view('dasbor/admin/head')
 								</p>
 
 								<p class="more">
-									<a href="<?php echo site_url('admin/crudporto'); ?>">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+									<a href="<?php echo site_url('index.php/index.php/Admin/crudporto'); ?>">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
 								</p>
 							</div>
 						</div>
@@ -105,7 +105,7 @@ $this->load->view('dasbor/admin/head')
 						</table>
 					</div>
 				</div>
-				<span class="btn btn-primary"><a href="<?php echo site_url('admin/cruduser') ?>">See Tables</a></span>
+				<span class="btn btn-primary"><a href="<?php echo site_url('index.php/Admin/cruduser') ?>">See Tables</a></span>
 			</div>       
 		</div>
 	</div>

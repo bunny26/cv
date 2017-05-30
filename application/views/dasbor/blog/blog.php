@@ -20,7 +20,7 @@ $this->load->view('dasbor/admin/head');
 							<table class="table table-striped table-hover table-bordered">
 								<div>
 									<span class="btn btn-primary">
-										<a href="<?php echo base_url()."index.php/admin/add_dataB"; ?>">Tambah Data</a>
+										<a href="<?php echo base_url()."index.php/Admin/add_dataB"; ?>">Tambah Data</a>
 									</span>
 								</div>
 								<thead>
@@ -39,8 +39,8 @@ $this->load->view('dasbor/admin/head');
 										<th><?php echo $b['idPost']; ?></th>
 										<th><?php echo $b['judul']; ?></th>
 										<th><?php echo $b['isiBerita']; ?></th>
-										<td align="center"><a href="<?php echo base_url()."index.php/admin/edit_dataB/".$b['idPost']; ?>"><button>EDIT</button></a></td>
-										<td align="center"><a href="<?php echo base_url()."index.php/admin/do_deleteB/".$b['idPost']; ?>"><button>DELETE</button></a></td>
+										<td align="center"><a href="<?php echo base_url()."index.php/Admin/edit_dataB/".$b['idPost']; ?>"><button>EDIT</button></a></td>
+										<td align="center"><a href="<?php echo base_url()."index.php/Admin/do_deleteB/".$b['idPost']; ?>"><button>DELETE</button></a></td>
 										<td>
 											<img src="<?php echo base_url().$b['imageB']; ?>" width="400" height="300">
 										</td>

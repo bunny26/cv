@@ -4,7 +4,7 @@ $this->load->view('dasbor/admin/head');
 <div class="templatemo-content-wrapper">
 	<div class="templatemo-content">
 		<ol class="breadcrumb">
-			<li><a href="<?php echo base_url('admin/rumah'); ?>">Admin Panel</a></li>
+			<li><a href="<?php echo base_url('index.php/Admin/rumah'); ?>">Admin Panel</a></li>
 			<li><a href="#">Dashboard</a></li>
 			<li class="active">Portofolio</li>
 		</ol>
@@ -20,7 +20,7 @@ $this->load->view('dasbor/admin/head');
 					<table class="table table-striped table-hover table-bordered">
 						<div>
 						<span class="btn btn-primary">
-							<a href="<?php echo base_url()."index.php/admin/add_dataP"; ?>">Tambah Data</a>
+							<a href="<?php echo base_url()."index.php/Admin/add_dataP"; ?>">Tambah Data</a>
 						</span>
 					</div>
 						<thead>
@@ -41,8 +41,8 @@ $this->load->view('dasbor/admin/head');
 								<th><?php echo $d['namaPorto']; ?></th>
 								<th><?php echo $d['keterangan']; ?></th>
 								<th><?php echo $d['kategori']; ?></th>
-								<td align="center"><a href="<?php echo base_url()."index.php/admin/edit_dataP/".$d['idPorto']; ?>"><button>EDIT</button></a></td>
-								<td align="center"><a href="<?php echo base_url()."index.php/admin/do_deleteP/".$d['idPorto']; ?>"><button>DELETE</button></a></td>
+								<td align="center"><a href="<?php echo base_url()."index.php/Admin/edit_dataP/".$d['idPorto']; ?>"><button>EDIT</button></a></td>
+								<td align="center"><a href="<?php echo base_url()."index.php/Admin/do_deleteP/".$d['idPorto']; ?>"><button>DELETE</button></a></td>
 								<td>
 									<img src="<?php echo base_url().$d['imageP']; ?>" width="400" height="300">
 								</td>

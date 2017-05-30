@@ -11,7 +11,7 @@
       </div>   
     </div>
     <div class="template-page-wrapper">
-      <form class="form-horizontal templatemo-signin-form" role="form" action="<?php echo base_url('login/aksi_login')?>"  method="post">
+      <form class="form-horizontal templatemo-signin-form" role="form" action="<?php echo base_url('index.php/Login/aksi_login')?>"  method="post">
         <div class="form-group">
           <div class="col-md-12">
             <label for="username" class="col-sm-2 control-label">Username</label>

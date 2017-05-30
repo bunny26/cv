@@ -15,7 +15,7 @@ $this->load->view('dasbor/admin/head');
           <div class="col-md-12">
             <h4 class="margin-bottom-15"> Edit Testimoni</h4>
 
-            <form method="POST" action="<?php echo base_url()."index.php/admin/do_updateT"; ?>">
+            <form method="POST" action="<?php echo base_url()."index.php/Admin/do_updateT"; ?>">
              <table class="table-responsive">
               <div class="input-group" class="templatemo-content-wrapper" >
                 <span class="input-group-addon" id="basic-addon1" style="width: 70px;">Id</span>

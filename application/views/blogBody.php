@@ -36,11 +36,11 @@
                 <nav class="collapse navbar-collapse navbar-right" >
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href= "#">Home</a></li>
-                        <li><a href="<?php echo site_url('home'); ?>#about">About Us</a></li>
-                        <li><a href="<?php echo site_url('home'); ?>#layanan">Services</a></li>
-                        <li><a href="<?php echo site_url('home'); ?>#out-team">Team</a></li>
-                        <li><a href="<?php echo site_url('home'); ?>#showcase">Portfolio</a></li>
-                        <li><a href="<?php echo site_url('home'); ?>#contact-us">Contact</a></li>
+                        <li><a href="<?php echo site_url('index.php/Home'); ?>#about">About Us</a></li>
+                        <li><a href="<?php echo site_url('index.php/Home'); ?>#layanan">Services</a></li>
+                        <li><a href="<?php echo site_url('index.php/Home'); ?>#out-team">Team</a></li>
+                        <li><a href="<?php echo site_url('index.php/Home'); ?>#showcase">Portfolio</a></li>
+                        <li><a href="<?php echo site_url('index.php/Home'); ?>#contact-us">Contact</a></li>
                     </ul>
 
                 </nav><!-- /.navbar-collapse -->
@@ -166,7 +166,7 @@
                                                 <img src="<?php echo base_url(); ?>/asset/img/blog/3D-beach-art.jpg" class="img-responsive" alt="3D Beach Art | Meghna">
                                             </div>
                                             <div class="tab-excerpt">
-                                                <h4><a href="<?php echo base_url().'index.php/home/getDetail/'.$berita[0]['idPost']?>"><?php echo $berita[0]['judul'] ?></a></h4>
+                                                <h4><a href="<?php echo base_url().'index.php/Home/getDetail/'.$berita[0]['idPost']?>"><?php echo $berita[0]['judul'] ?></a></h4>
                                                 <span>November 15 2014</span>
                                                 <p ><?php echo substr($berita[0]['isiBerita'],0,300); echo "..";  ?></p>
                                             </div>
@@ -176,7 +176,7 @@
                                                 <img src="<?php echo base_url(); ?>/asset/img/blog/amazing-caves-coverimage.jpg" class="img-responsive" alt="amazing-caves-coverimage | Meghna">
                                             </div>
                                             <div class="tab-excerpt">
-                                                <h4><a href="<?php echo base_url().'index.php/home/getDetail/'.$berita[1]['idPost']?>"><?php echo $berita[1]['judul'] ?></a></h4>
+                                                <h4><a href="<?php echo base_url().'index.php/Home/getDetail/'.$berita[1]['idPost']?>"><?php echo $berita[1]['judul'] ?></a></h4>
                                                 <span>November 15 2014</span>
                                                 <p ><?php echo substr($berita[1]['isiBerita'],0,300); echo "..";  ?></p>
                                             </div>
@@ -190,7 +190,7 @@
                                                 <img src="<?php echo base_url(); ?>/asset/img/blog/bicycle.jpg" class="img-responsive" alt="bicycle | Meghna">
                                             </div>
                                             <div class="tab-excerpt">
-                                                <h4><a href="<?php echo base_url().'index.php/home/getDetail/'.$berita[2]['idPost']?>"><?php echo $berita[2]['judul'] ?></a></h4>
+                                                <h4><a href="<?php echo base_url().'index.php/Home/getDetail/'.$berita[2]['idPost']?>"><?php echo $berita[2]['judul'] ?></a></h4>
                                                 <span>November 15 2014</span>
                                                 <p ><?php echo substr($berita[2]['isiBerita'],0,300); echo "..";  ?></p>
                                             </div>
@@ -200,7 +200,7 @@
                                                 <img src="<?php echo base_url(); ?>/asset/img/blog/3D-beach-art.jpg" class="img-responsive" alt="3D Beach Art | Meghna">
                                             </div>
                                             <div class="tab-excerpt">
-                                                <h4><a href="<?php echo base_url().'index.php/home/getDetail/'.$berita[3]['idPost']?>"><?php echo $berita[3]['judul'] ?></a></h4>
+                                                <h4><a href="<?php echo base_url().'index.php/Home/getDetail/'.$berita[3]['idPost']?>"><?php echo $berita[3]['judul'] ?></a></h4>
                                                 <span>November 15 2014</span>
                                                 <p ><?php echo substr($berita[3]['isiBerita'],0,300); echo "..";  ?></p>
                                             </div>

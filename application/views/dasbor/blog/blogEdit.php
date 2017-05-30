@@ -15,7 +15,7 @@ $this->load->view('dasbor/admin/head');
         <div class="col-md-12">
           <h4 class="margin-bottom-15">Edit Berita</h4>
 
-          <form class="templatemo-content-wrapper" method="POST" action="<?php echo base_url()."index.php/admin/do_updateB"; ?>">
+          <form class="templatemo-content-wrapper" method="POST" action="<?php echo base_url()."index.php/Admin/do_updateB"; ?>">
            <table class="table-responsive">
             <div class="input-group" class="templatemo-content-wrapper">
               <span class="input-group-addon" id="sizing-addon2">Id</span>
