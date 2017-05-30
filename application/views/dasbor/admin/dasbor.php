@@ -30,7 +30,7 @@ $this->load->view('dasbor/admin/head')
 								</p>
 
 								<p class="more">
-									<a href="<?php echo site_url('admin/crudporto'); ?>">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+									<a href="<?php echo site_url('index.php/Admin/crudporto'); ?>">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
 								</p>
 							</div>
 						</div>
