@@ -32,18 +32,9 @@ class Login extends CI_Controller{
             redirect(base_url('index.php/admin1')); //controller
  
         }else{
-            
-             $data_session = array(
-                'nama' => $username,
-                'status' => "login"
-                );
- 
-            $this->session->set_userdata($data_session);
- 
-            redirect(base_url('index.php/admin1'));
-
-            echo "Username dan password salah !";
+            echo "Salah";
         }
+        
     }
  
     function logout(){
@@ -52,3 +43,5 @@ class Login extends CI_Controller{
     }
 
     }
+
+    

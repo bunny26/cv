@@ -11,12 +11,12 @@
       </div>   
     </div>
     <div class="template-page-wrapper">
-      <form class="form-horizontal templatemo-signin-form" role="form" action="<?php echo site_url('login/aksi_login')?>"  method="post">
+      <form class="form-horizontal templatemo-signin-form" role="form" action="<?php echo base_url('login/aksi_login')?>"  method="post">
         <div class="form-group">
           <div class="col-md-12">
             <label for="username" class="col-sm-2 control-label">Username</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="username" placeholder="Username">
+              <input type="text" class="form-control" id="username" name="usernamae" placeholder="Username">
             </div>
           </div>              
         </div>
@@ -24,7 +24,7 @@
           <div class="col-md-12">
             <label for="password" class="col-sm-2 control-label">Password</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" id="password" placeholder="Password">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password">
             </div>
           </div>
         </div>

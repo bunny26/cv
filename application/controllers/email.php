@@ -15,7 +15,7 @@
    
    //konfigurasi email
    $config = array();
-   $config['charset'] = 'iso-8859-1';
+   $config['charset'] = 'UTF-8';
    $config['useragent'] = 'Codeigniter'; //bebas sesuai keinginan kamu
    $config['protocol']= "smtp";
    $config['mailtype']= "html";
